@@ -8,6 +8,7 @@ namespace SourceCode
 {
     public static class AuthConfig
     {
+       
         public static void RegisterOpenAuth()
         {
             // See http://go.microsoft.com/fwlink/?LinkId=252803 for details on setting up this ASP.NET
