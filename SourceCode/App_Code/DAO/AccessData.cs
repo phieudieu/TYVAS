@@ -282,7 +282,7 @@ public class AccessData
     /// <param name="row">Object</param>
     /// <param name="column">Column</param>
     /// <returns>record insert</returns>
-    public bool InsertRow( string table, object row , string[] column)
+    public bool InsertRow( string table, object row , string[] column=null )
     {
         string sql = GetInsertSql(table, row, column);
         try
@@ -426,7 +426,7 @@ public class AccessData
         return sqltext.ToString();
     }
 
-    public bool  UpdateRow(string table, object row, string[] column= null )
+    public bool  UpdateRow(string table, object row, string[] column )
     {
         string sql = "";
         if (ExecuteNonQuery(sql) > 0)
@@ -566,42 +566,6 @@ public class AccessData
         return sqltext.ToString();
     }
 
-    ///// <summary>
-    ///// Create item from datarow
-    ///// </summary>
-    ///// <typeparam name="T">Object return</typeparam>
-    ///// <param name="row">Object</param>
-    ///// <param name="properties">List properties of Object</param>
-    ///// <returns>Object</returns>
-    //private static T CreateItemFromRow<T>(DataRow row, IList<PropertyInfo> properties) where T : new()
-    //{
-    //    T item = new T();
-    //    foreach (var property in properties)
-    //    {
-    //        property.SetValue(item, row[property.Name], null);
-    //    }
-    //    return item;
-    //}
-
-    ///// <summary>
-    ///// List object
-    ///// </summary>
-    ///// <typeparam name="T">Object</typeparam>
-    ///// <param name="table">Table</param>
-    ///// <returns>Object lst</returns>
-    //public static  IList<T> DataTableToList<T>(this DataTable table) where T : new()
-    //{
-    //    IList<PropertyInfo> properties = typeof(T).GetProperties().ToList();
-    //    IList<T> result = new List<T>();
-
-    //    foreach (var row in table.Rows)
-    //    {
-    //        var item = CreateItemFromRow<T>((DataRow)row, properties);
-    //        result.Add(item);
-    //    }
-
-    //    return result;
-    //}
 
 
 }
