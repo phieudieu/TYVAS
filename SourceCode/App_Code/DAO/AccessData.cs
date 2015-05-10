@@ -7,12 +7,15 @@ using System.Data;
 using System.Text;
 using System.Reflection;
 using Microsoft.VisualBasic;
+using log4net;
+using log4net.Config;
 
 /// <summary>
 /// Summary description for AccessData
 /// </summary>
 public class AccessData
 {
+    ILog m_logger = log4net.LogManager.GetLogger(typeof(AccessData));
     private SqlConnection m_sqlConnection = null;
 
     public SqlConnection SqlConnection
@@ -51,8 +54,9 @@ public class AccessData
                  m_sqlConnection.Close() ;
              }
          }
-         catch  
-         {        
+         catch  (Exception ex )
+         {
+             m_logger.Error(ex.ToString());
          }
      }
 
@@ -76,6 +80,7 @@ public class AccessData
              {
                  da.Dispose();
              }
+             m_logger.Error(ex.ToString());
              throw ex;
          }
          return dt;
@@ -108,6 +113,7 @@ public class AccessData
          }
          catch (Exception ex)
          {
+             m_logger.Error(ex.ToString());
              throw ex;
          }
          finally
@@ -152,6 +158,7 @@ public class AccessData
          }
          catch (Exception ex)
          {
+             m_logger.Error(ex.ToString());
              throw ex;
          }
          finally
@@ -183,6 +190,7 @@ public class AccessData
          }
          catch (Exception ex)
          {
+             m_logger.Error(ex.ToString());
             throw ex;
          } 
          finally
@@ -216,6 +224,7 @@ public class AccessData
          }
          catch (Exception ex)
          {
+             m_logger.Error(ex.ToString());
              throw ex;
          }
          finally
@@ -252,6 +261,7 @@ public class AccessData
          }
          catch (Exception ex)
          {
+             m_logger.Error(ex.ToString());
              throw ex;
          }
          finally
@@ -284,6 +294,7 @@ public class AccessData
         }
         catch (Exception ex)
         {
+            m_logger.Error(ex.ToString());
             throw ex ;
         }
         return false;
@@ -306,105 +317,112 @@ public class AccessData
         PropertyInfo p = null;
         int i = 0;
         int sz = 0;
-       
-        if (row == null)
+        try
         {
-            if (column == null)
+            if (row == null)
             {
-                sz = column.GetLength(0);
-                for (i = 0; i < sz; i++)
+                if (column == null)
                 {
-                    p = row.GetType().GetProperty(column[i],BindingFlags.IgnoreCase  );                    
-                    sqltext2.AppendFormat("", c, column[i]);
-                    switch ( p.PropertyType.FullName)
+                    sz = column.GetLength(0);
+                    for (i = 0; i < sz; i++)
+                    {
+                        p = row.GetType().GetProperty(column[i], BindingFlags.IgnoreCase);
+                        sqltext2.AppendFormat("", c, column[i]);
+                        switch (p.PropertyType.FullName)
                         {
-                        case "System.DateTime":
+                            case "System.DateTime":
                                 if (p.GetValue(row, null) == null)
                                 {
                                     sqltext2.AppendFormat("{0}{1}", c, "null");
                                 }
                                 else
                                 {
-                                    if (Convert.ToDateTime( p.GetValue(row, null)) == DateTime.MinValue)
+                                    if (Convert.ToDateTime(p.GetValue(row, null)) == DateTime.MinValue)
                                     {
                                         sqltext2.AppendFormat("{0}{1}", c, "null");
                                     }
                                     else
                                     {
-                                         sqltext2.AppendFormat("{0}'{1}'", c, p.GetValue(row, null));
+                                        sqltext2.AppendFormat("{0}'{1}'", c, p.GetValue(row, null));
                                     }
                                 }
-                            break;
-                        case "System.Int16":
-                        case "System.Int32":
-                        case "System.Int64":
-                        case "System.UInt16":
-                        case "System.UInt32":
-                        case "System.UInt64":
-                        case "System.Double":
-                        case "System.Single":
-                        case "System.Decimal":
-                            sqltext2.AppendFormat("{0},{1}",c,p.GetValue ( row, null ));
-                            break;
-                        default:
-                            if (p.GetValue(row, null) != null )
-                            {
-                                sqltext2.AppendFormat("{0}'{1}'", c, p.GetValue(row, null));                                
-                            }
-                            break;
+                                break;
+                            case "System.Int16":
+                            case "System.Int32":
+                            case "System.Int64":
+                            case "System.UInt16":
+                            case "System.UInt32":
+                            case "System.UInt64":
+                            case "System.Double":
+                            case "System.Single":
+                            case "System.Decimal":
+                                sqltext2.AppendFormat("{0},{1}", c, p.GetValue(row, null));
+                                break;
+                            default:
+                                if (p.GetValue(row, null) != null)
+                                {
+                                    sqltext2.AppendFormat("{0}'{1}'", c, p.GetValue(row, null));
+                                }
+                                break;
                         }
-                    c = ",";
+                        c = ",";
+                    }
+                    sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1, sqltext2);
                 }
-                sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1, sqltext2);
-            }
-            else
-            {
-                pi = row.GetType().GetProperties();
-                foreach( PropertyInfo item in pi)
+                else
                 {
-                    sqltext2.AppendFormat("", c, item.Name);
-                    switch (item.PropertyType.FullName)
+                    pi = row.GetType().GetProperties();
+                    foreach (PropertyInfo item in pi)
                     {
-                        case "System.DateTime":
-                            if (item.GetValue(row, null) == null)
-                            {
-                                sqltext2.AppendFormat("{0}{1}", c, "null");
-                            }
-                            else
-                            {
-                                if (Convert.ToDateTime(item.GetValue(row, null)) == DateTime.MinValue)
+                        sqltext2.AppendFormat("", c, item.Name);
+                        switch (item.PropertyType.FullName)
+                        {
+                            case "System.DateTime":
+                                if (item.GetValue(row, null) == null)
                                 {
                                     sqltext2.AppendFormat("{0}{1}", c, "null");
                                 }
                                 else
                                 {
+                                    if (Convert.ToDateTime(item.GetValue(row, null)) == DateTime.MinValue)
+                                    {
+                                        sqltext2.AppendFormat("{0}{1}", c, "null");
+                                    }
+                                    else
+                                    {
+                                        sqltext2.AppendFormat("{0}'{1}'", c, item.GetValue(row, null));
+                                    }
+                                }
+                                break;
+                            case "System.Int16":
+                            case "System.Int32":
+                            case "System.Int64":
+                            case "System.UInt16":
+                            case "System.UInt32":
+                            case "System.UInt64":
+                            case "System.Double":
+                            case "System.Single":
+                            case "System.Decimal":
+                                sqltext2.AppendFormat("{0},{1}", c, item.GetValue(row, null));
+                                break;
+                            default:
+                                if (item.GetValue(row, null) != null)
+                                {
                                     sqltext2.AppendFormat("{0}'{1}'", c, item.GetValue(row, null));
                                 }
-                            }
-                            break;
-                        case "System.Int16":
-                        case "System.Int32":
-                        case "System.Int64":
-                        case "System.UInt16":
-                        case "System.UInt32":
-                        case "System.UInt64":
-                        case "System.Double":
-                        case "System.Single":
-                        case "System.Decimal":
-                            sqltext2.AppendFormat("{0},{1}", c, item.GetValue(row, null));
-                            break;
-                        default:
-                            if (item.GetValue(row, null) != null)
-                            {
-                                sqltext2.AppendFormat("{0}'{1}'", c, item.GetValue(row, null));                                
-                            }
-                            break;
+                                break;
+                        }
+                        c = ",";
                     }
-                    c = ",";
+                    sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1, sqltext2);
                 }
-                sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1, sqltext2);
             }
         }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        m_logger.Info(sqltext.ToString ());
         return sqltext.ToString();
     }
 
@@ -436,107 +454,115 @@ public class AccessData
         PropertyInfo p = null;
         int i = 0;
         int sz = 0;
-        if (row == null)
+        try
         {
-            if (column == null)
+            if (row == null)
             {
-                sqltext.AppendFormat("UPDATE {0} SET ", table);
-                sz = column.GetLength(0);
-                for (i = 0; i < sz; i++)
+                if (column == null)
                 {
-                    p = row.GetType().GetProperty(column[i], BindingFlags.IgnoreCase);
-                    sqltext2.AppendFormat("", c, column[i]);
-                    switch (p.PropertyType.FullName)
+                    sqltext.AppendFormat("UPDATE {0} SET ", table);
+                    sz = column.GetLength(0);
+                    for (i = 0; i < sz; i++)
                     {
-                        case "System.DateTime":
-                            if (p.GetValue(row, null) == null)
-                            {
-                                sqltext2.AppendFormat("{0}{1}={2}", c, column[i], "null");
-                            }
-                            else
-                            {
-                                if (Convert.ToDateTime(p.GetValue(row, null)) == DateTime.MinValue)
+                        p = row.GetType().GetProperty(column[i], BindingFlags.IgnoreCase);
+                        sqltext2.AppendFormat("", c, column[i]);
+                        switch (p.PropertyType.FullName)
+                        {
+                            case "System.DateTime":
+                                if (p.GetValue(row, null) == null)
                                 {
-                                    sqltext2.AppendFormat("{0}{1}={2}", c,column[i], "null");
+                                    sqltext2.AppendFormat("{0}{1}={2}", c, column[i], "null");
                                 }
                                 else
+                                {
+                                    if (Convert.ToDateTime(p.GetValue(row, null)) == DateTime.MinValue)
+                                    {
+                                        sqltext2.AppendFormat("{0}{1}={2}", c, column[i], "null");
+                                    }
+                                    else
+                                    {
+                                        sqltext2.AppendFormat("{0}{1}='{2}'", c, column[i], p.GetValue(row, null));
+                                    }
+                                }
+                                break;
+                            case "System.Int16":
+                            case "System.Int32":
+                            case "System.Int64":
+                            case "System.UInt16":
+                            case "System.UInt32":
+                            case "System.UInt64":
+                            case "System.Double":
+                            case "System.Single":
+                            case "System.Decimal":
+                                sqltext2.AppendFormat("{0}{1}={2}", c, column[i], p.GetValue(row, null));
+                                break;
+                            default:
+                                if (p.GetValue(row, null) != null)
                                 {
                                     sqltext2.AppendFormat("{0}{1}='{2}'", c, column[i], p.GetValue(row, null));
                                 }
-                            }
-                            break;
-                        case "System.Int16":
-                        case "System.Int32":
-                        case "System.Int64":
-                        case "System.UInt16":
-                        case "System.UInt32":
-                        case "System.UInt64":
-                        case "System.Double":
-                        case "System.Single":
-                        case "System.Decimal":
-                            sqltext2.AppendFormat("{0}{1}={2}", c, column[i], p.GetValue(row, null));
-                            break;
-                        default:
-                            if (p.GetValue(row, null) != null)
-                            {
-                                sqltext2.AppendFormat("{0}{1}='{2}'", c, column[i], p.GetValue(row, null));                                
-                            }
-                            break;
+                                break;
+                        }
+                        c = ",";
                     }
-                    c = ",";
-                }               
-            }
-            else
-            {
-                sqltext.AppendFormat("UPDATE {0} SET ", table);
-                pi = row.GetType().GetProperties();
-                foreach (PropertyInfo item in pi)
-                {                    
-                    switch (item.PropertyType.FullName)
+                }
+                else
+                {
+                    sqltext.AppendFormat("UPDATE {0} SET ", table);
+                    pi = row.GetType().GetProperties();
+                    foreach (PropertyInfo item in pi)
                     {
-                        case "System.DateTime":
-                            if (item.GetValue(row, null) == null)
-                            {
-                                sqltext2.AppendFormat("{0}{1}={2}", c, p.Name, "null");
-                            }
-                            else
-                            {
-                                if (Convert.ToDateTime(item.GetValue(row, null)) == DateTime.MinValue)
+                        switch (item.PropertyType.FullName)
+                        {
+                            case "System.DateTime":
+                                if (item.GetValue(row, null) == null)
                                 {
-                                    sqltext2.AppendFormat("{0}{1}={2}", c,p.Name, "null");
+                                    sqltext2.AppendFormat("{0}{1}={2}", c, p.Name, "null");
                                 }
                                 else
                                 {
+                                    if (Convert.ToDateTime(item.GetValue(row, null)) == DateTime.MinValue)
+                                    {
+                                        sqltext2.AppendFormat("{0}{1}={2}", c, p.Name, "null");
+                                    }
+                                    else
+                                    {
+                                        sqltext2.AppendFormat("{0}{1}='{2}'", c, p.Name, item.GetValue(row, null));
+                                    }
+                                }
+                                break;
+                            case "System.Int16":
+                            case "System.Int32":
+                            case "System.Int64":
+                            case "System.UInt16":
+                            case "System.UInt32":
+                            case "System.UInt64":
+                            case "System.Double":
+                            case "System.Single":
+                            case "System.Decimal":
+                                sqltext2.AppendFormat("{0}{1}={2}", c, p.Name, item.GetValue(row, null));
+                                break;
+                            default:
+                                if (item.GetValue(row, null) != null)
+                                {
                                     sqltext2.AppendFormat("{0}{1}='{2}'", c, p.Name, item.GetValue(row, null));
                                 }
-                            }
-                            break;
-                        case "System.Int16":
-                        case "System.Int32":
-                        case "System.Int64":
-                        case "System.UInt16":
-                        case "System.UInt32":
-                        case "System.UInt64":
-                        case "System.Double":
-                        case "System.Single":
-                        case "System.Decimal":
-                            sqltext2.AppendFormat("{0}{1}={2}", c, p.Name, item.GetValue(row, null));
-                            break;
-                        default:
-                            if (item.GetValue(row, null) != null)
-                            {
-                                sqltext2.AppendFormat("{0}{1}='{2}'", c,p.Name, item.GetValue(row, null));                               
-                            }
-                            break;
+                                break;
+                        }
+                        c = ",";
                     }
-                    c = ",";
-                }               
+                }
             }
+            if (where != "")
+            {
+                sqltext.AppendFormat(" WHERE {0}", where);
+            }  
         }
-        if (where != "" )
+        catch (Exception ex)
         {
-            sqltext.AppendFormat(" WHERE {0}", where );
-        }  
+            m_logger.Error(ex.ToString());
+        }
+        m_logger.Info(sqltext.ToString ());
         return sqltext.ToString();
     }
 
