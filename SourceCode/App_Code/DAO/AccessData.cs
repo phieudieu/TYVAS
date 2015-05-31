@@ -9,6 +9,8 @@ using System.Reflection;
 using Microsoft.VisualBasic;
 using log4net;
 using log4net.Config;
+using System.Configuration;
+
 
 /// <summary>
 /// Summary description for AccessData
@@ -17,6 +19,24 @@ public class AccessData
 {
     ILog m_logger = log4net.LogManager.GetLogger(typeof(AccessData));
     private SqlConnection m_sqlConnection = null;
+    private string  m_connectString    = "";
+
+    private  string  GetConnection() 
+    {
+        StringBuilder s = new StringBuilder();
+        try
+        {
+            s.AppendFormat("Data Source={0};", ConfigurationManager.AppSettings["ServerName"]);
+            s.AppendFormat("Initial Catalog={0};", ConfigurationManager.AppSettings["DBName"]);
+            s.AppendFormat("User ID={0};", ConfigurationManager.AppSettings["UserName"]);
+            s.AppendFormat("Password={0}", ConfigurationManager.AppSettings["Password"]);
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return s.ToString ();
+    }       
 
     public SqlConnection SqlConnection
     {
@@ -26,9 +46,8 @@ public class AccessData
 
 	public AccessData()
 	{
-		//
-		// TODO: Add constructor logic here
-		//
+        m_connectString = GetConnection();
+        m_sqlConnection = new SqlConnection(m_connectString);
 	}
 
     /// <summary>
@@ -319,15 +338,17 @@ public class AccessData
         int sz = 0;
         try
         {
-            if (row == null)
+            if (row != null)
             {
-                if (column == null)
+                if (column != null)
                 {
                     sz = column.GetLength(0);
                     for (i = 0; i < sz; i++)
                     {
-                        p = row.GetType().GetProperty(column[i], BindingFlags.IgnoreCase);
-                        sqltext2.AppendFormat("", c, column[i]);
+                        //p = row.GetType().GetProperty(column[i],  BindingFlags.IgnoreCase);
+                        p = row.GetType().GetProperty(column[i]);
+
+                        sqltext1.AppendFormat("{0}{1}", c, column[i]);
                         switch (p.PropertyType.FullName)
                         {
                             case "System.DateTime":
@@ -356,7 +377,7 @@ public class AccessData
                             case "System.Double":
                             case "System.Single":
                             case "System.Decimal":
-                                sqltext2.AppendFormat("{0},{1}", c, p.GetValue(row, null));
+                                sqltext2.AppendFormat("{0}{1}", c, p.GetValue(row, null));
                                 break;
                             default:
                                 if (p.GetValue(row, null) != null)
@@ -374,7 +395,7 @@ public class AccessData
                     pi = row.GetType().GetProperties();
                     foreach (PropertyInfo item in pi)
                     {
-                        sqltext2.AppendFormat("", c, item.Name);
+                        sqltext1.AppendFormat("{0}{1}", c, item.Name);
                         switch (item.PropertyType.FullName)
                         {
                             case "System.DateTime":
@@ -403,7 +424,7 @@ public class AccessData
                             case "System.Double":
                             case "System.Single":
                             case "System.Decimal":
-                                sqltext2.AppendFormat("{0},{1}", c, item.GetValue(row, null));
+                                sqltext2.AppendFormat("{0}{1}", c, item.GetValue(row, null));
                                 break;
                             default:
                                 if (item.GetValue(row, null) != null)
@@ -414,7 +435,7 @@ public class AccessData
                         }
                         c = ",";
                     }
-                    sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1, sqltext2);
+                    sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1.ToString (), sqltext2.ToString ());
                 }
             }
         }
@@ -426,9 +447,9 @@ public class AccessData
         return sqltext.ToString();
     }
 
-    public bool  UpdateRow(string table, object row, string[] column )
+    public bool  UpdateRow(string table, object row, string[] column ,string where="")
     {
-        string sql = "";
+        string sql = GetUpdateSql(  table, row, column ,where )  ;
         if (ExecuteNonQuery(sql) > 0)
         {
             return true;
@@ -565,7 +586,27 @@ public class AccessData
         m_logger.Info(sqltext.ToString ());
         return sqltext.ToString();
     }
+    
+    /// <summary>
+    /// Delete table by condition
+    /// </summary>
+    /// <param name="table">Table name</param>
+    /// <param name="where">condition to delte Ex: id = 1</param>
+    /// <returns>Num row deleted</returns>
+    public int DeleteRow(string table, string where)
+    {
+        string sql = string.Format("Delete {0} where {1}", table, where);
+        return ExecuteNonQuery(sql);
+    }
 
-
-
+    /// <summary>
+    /// Delete table
+    /// </summary>
+    /// <param name="table">Table name</param>
+    /// <returns></returns>
+    public int DeleteAll(string table)
+    {
+        string sql = string.Format("Delete {0} ", table);
+        return ExecuteNonQuery(sql);
+    }
 }

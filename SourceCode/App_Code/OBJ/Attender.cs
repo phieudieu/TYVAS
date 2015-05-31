@@ -18,7 +18,7 @@ public class Attender
     private int m_Type;
     private DateTime m_CreatedDate;
     private DateTime m_LastModifedDate;
-    private DateTime m_CreatedUser;
+    private string  m_CreatedUser;
     private DateTime m_LastModifiedUser;
     public Attender()
     {
@@ -30,7 +30,7 @@ public class Attender
         m_Type = 0;
         m_CreatedDate = DateTime.MinValue;
         m_LastModifedDate = DateTime.MinValue;
-        m_CreatedUser = DateTime.MinValue;
+        m_CreatedUser = string.Empty ;
         m_LastModifiedUser = DateTime.MinValue;
     }
     public int ID
@@ -73,7 +73,7 @@ public class Attender
         get { return m_LastModifedDate; }
         set { m_LastModifedDate = value; }
     }
-    public DateTime CreatedUser
+    public string  CreatedUser
     {
         get { return m_CreatedUser; }
         set { m_CreatedUser = value; }
