@@ -63,6 +63,18 @@ define([
                             }]
                         }
                     });
+                    $routeProvider.when('/admin', {
+                        templateUrl: 'views/full-page.html',
+                        controller: "AdminPage",
+                        resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                            load: ['$ocLazyLoad', function ($ocLazyLoad) {
+                                // you can lazy load files for an existing module
+                                return $ocLazyLoad.load(
+                                    'js/pages/AdminPage'
+                                );
+                            }]
+                        }
+                    });
                     $routeProvider.otherwise({redirectTo: '/'});
 
                 });

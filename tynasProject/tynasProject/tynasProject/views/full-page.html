@@ -5,8 +5,8 @@
     </div>
     <div class="main-page-content row">
         <div class="row" ng-if="rightContent.length == 0">
-            <div ng-repeat="elem in mainContent" bind-compiled-html="elem.name">
-
+            <div class="col-md-12">
+                <div class="col-md-12"><div ng-repeat="elem in mainContent" bind-compiled-html="elem.name"></div></div>
             </div>
         </div>
         <div class="row" ng-if="rightContent.length > 0 ">

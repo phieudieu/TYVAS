@@ -9,11 +9,14 @@ require.config({
         'oc.lazyLoad' : 'lib/ocLazyLoad/ocLazyLoad.min',
         ngTouch:"lib/angular/angular-touch.min",
         ngAnimate:"lib/angular/angular-animate.min",
-        bootstrap:"lib/bootstrap/js/bootstrap.min",
+        bootstrap: "lib/bootstrap/js/bootstrap.min",
+        summernote: 'lib/summernote/summernote',
+        "angular.summernote": 'lib/summernote/angular-summernote',
         "ui.bootstrap":"lib/bootstrap/js/ui-bootstrap-tpls-0.13.0.min",
         'lnsApp.directive' : 'js/common/directive',
         'lnsApp.service' : 'js/common/service',
         'lnsApp.controllers' : 'js/common/controller',
+        
 
     },
 
@@ -28,7 +31,9 @@ require.config({
         bootstrap : ['jquery'],
         ngTouch:["angular"],
         ngAnimate:["angular"],
-        "ui.bootstrap":["angular",'bootstrap','ngTouch','ngAnimate'],
+        "ui.bootstrap": ["angular", 'bootstrap', 'ngTouch', 'ngAnimate'],
+        summernote: ['jquery', "angular", 'bootstrap'],
+        "angular.summernote": ['ui.bootstrap', 'summernote'],
         'lnsApp.directive' : ['js/common/directive'],
         'lnsApp.service' : ['js/common/service'],
         'lnsApp.controllers' : ['angular','lnsApp.directive','lnsApp.service']

@@ -1,6 +1,7 @@
 @base: #f938ab;
 @orange-color : #EF4F00;
 @gray-color :  #e4e3e3;
+@gray-color-lower: #f5f5f5;
 body  {
   background: #D2D2D2;
 }
@@ -10,6 +11,24 @@ body  {
   src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+.gray-color {
+  color: @gray-color;
+}
+.orange-color {
+  color: @orange-color;
+}
+.font-bold {
+  font-weight: 600;
+}
+.padding-15 {
+  padding: 15px;
+}
+.margin-top10 {
+  margin-top: 10px;
+}
+.text-right {
+  text-align: right;
 }
 .top-block-all {
   height: 43px;
@@ -108,4 +127,86 @@ body  {
 }
 .banner-top{
 
+}
+.padding-left0 {
+  padding-left: 0px !important;
+}
+.padding0 {
+  padding: 0px;
+}
+.icon-list-style {
+  font-size: 9px;
+  padding-right: 10px;
+}
+.display-table {
+  //display: table-cell;
+  a, span, i {
+    vertical-align: middle;
+  }
+}
+.left-menu-admin {
+    .panel-group .panel+.panel {
+        margin-top: 0px;
+    }
+    .panel {
+      border-radius: 0px;
+    }
+    .panel-body {
+        padding: 0px;
+         ul {
+              margin-top: 0;
+              margin-bottom: 0px;
+        }
+        .list-group {
+          padding-left: 0;
+          .list-group-item:first-child {
+              border-top-left-radius: 0px; 
+              border-top-right-radius: 0px;
+            }
+          .list-group-item:last-child {
+              margin-bottom: 0;
+              border-bottom-right-radius: 0px; 
+              border-bottom-left-radius: 0px; 
+              border-bottom: none;
+            }
+          .list-group-item {
+              border-left: none;
+              border-right: none;
+              i {
+                font-size: 9px;
+                color: @gray-color;
+                padding-right: 10px;
+              }
+            }
+        }
+    }
+}
+.event-form-reg {
+  fieldset {
+    border: 1px solid @gray-color;
+    padding: 10px;
+  }
+  legend {
+    width: auto;
+    border-bottom: none;
+  }
+}
+.input-date-event {
+  .input-date {
+    ul{
+      width: 100%;
+      table {
+        width: 100%;
+      }
+    }
+  }
+}
+.admin-right-box {
+  border: 1px solid @gray-color;
+  padding: 15px;
+  padding-top: 0px;
+  .admin-right-box-title {
+    background-color: @gray-color-lower;
+    padding: 10px;
+  }
 }

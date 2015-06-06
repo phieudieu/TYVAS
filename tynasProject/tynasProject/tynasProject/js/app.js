@@ -7,6 +7,8 @@ define(['angular',
     'ngTouch',
     'ngAnimate',
     'ui.bootstrap',
+    'summernote',
+    'angular.summernote',
     'js/common/directive',
     'js/common/service',
     'js/common/controller',
@@ -16,7 +18,7 @@ define(['angular',
 ], function(angular){
 
     var app = angular.module('lnsApp',
-        [ 'ngRoute','ngTouch', 'oc.lazyLoad','ui.bootstrap','ngAnimate',
+        ['ngRoute', 'ngTouch', 'oc.lazyLoad', 'ui.bootstrap', 'ngAnimate', 'summernote',
             'lnsApp.directive','lnsApp.service','lnsApp.controllers'
         ]);
 
