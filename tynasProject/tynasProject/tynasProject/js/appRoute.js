@@ -75,6 +75,30 @@ define([
                             }]
                         }
                     });
+                    $routeProvider.when('/contact', {
+                        templateUrl: 'views/full-page.html',
+                        controller: "ContactPage",
+                        resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                            load: ['$ocLazyLoad', function ($ocLazyLoad) {
+                                // you can lazy load files for an existing module
+                                return $ocLazyLoad.load(
+                                    'js/pages/ContactPage'
+                                );
+                            }]
+                        }
+                    });
+                    $routeProvider.when('/about', {
+                        templateUrl: 'views/full-page.html',
+                        controller: "AboutPage",
+                        resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                            load: ['$ocLazyLoad', function ($ocLazyLoad) {
+                                // you can lazy load files for an existing module
+                                return $ocLazyLoad.load(
+                                    'js/pages/AboutPage'
+                                );
+                            }]
+                        }
+                    });
                     $routeProvider.otherwise({redirectTo: '/'});
 
                 });
