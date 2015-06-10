@@ -686,3 +686,255 @@ ClientConnectionId:b2cb29f1-08f1-4853-bf52-9d450426ef62
 2015-06-10 19:57:21,915 [6] INFO TYVAS_WA.index [(null)] - Load....
 2015-06-10 19:57:21,923 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:57:21 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:57:21 PM',0,'6/10/2015 7:57:21 PM','6/10/2015 7:57:21 PM','Rookey6/10/2015 7:57:21 PM','Rookey6/10/2015 7:57:21 PM')
 2015-06-10 19:57:21,976 [6] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak57','TYVAS57','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 7:57:21 PM','thanh tu57',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 7:57:21 PM','Rookey57',1)
+2015-06-10 23:51:04,687 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 23:51:04,704 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 11:51:04 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 11:51:04 PM',0,'6/10/2015 11:51:04 PM','6/10/2015 11:51:04 PM','Rookey6/10/2015 11:51:04 PM','Rookey6/10/2015 11:51:04 PM')
+2015-06-10 23:51:05,037 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:05,073 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:05,112 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:05,168 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:05,227 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:05,227 [7] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak51','TYVAS51','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 11:51:05 PM','thanh tu51',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 11:51:05 PM','Rookey51',1)
+2015-06-10 23:51:19,261 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:19,304 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:19,345 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:19,387 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:19,429 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 23:51:19,735 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 23:51:19,736 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 11:51:19 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 11:51:19 PM',0,'6/10/2015 11:51:19 PM','6/10/2015 11:51:19 PM','Rookey6/10/2015 11:51:19 PM','Rookey6/10/2015 11:51:19 PM')
+2015-06-10 23:51:19,767 [8] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak51','TYVAS51','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 11:51:19 PM','thanh tu51',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 11:51:19 PM','Rookey51',1)
+2015-06-11 00:38:11,821 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 00:38:11,888 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 00:38:11,940 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 00:38:11,988 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 00:38:12,029 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 00:38:12,402 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-11 00:38:12,405 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/11/2015 12:38:12 AM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/11/2015 12:38:12 AM',0,'6/11/2015 12:38:12 AM','6/11/2015 12:38:12 AM','Rookey6/11/2015 12:38:12 AM','Rookey6/11/2015 12:38:12 AM')
+2015-06-11 00:38:12,423 [7] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak38','TYVAS38','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/11/2015 12:38:12 AM','thanh tu38',1,'/Images/IMG_20140315_173356.jpg',0,'6/11/2015 12:38:12 AM','Rookey38',1)
+2015-06-11 00:38:22,571 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-11 00:38:22,572 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/11/2015 12:38:22 AM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/11/2015 12:38:22 AM',0,'6/11/2015 12:38:22 AM','6/11/2015 12:38:22 AM','Rookey6/11/2015 12:38:22 AM','Rookey6/11/2015 12:38:22 AM')
+2015-06-11 00:38:22,588 [6] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak38','TYVAS38','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/11/2015 12:38:22 AM','thanh tu38',1,'/Images/IMG_20140315_173356.jpg',0,'6/11/2015 12:38:22 AM','Rookey38',1)
+2015-06-11 01:04:40,569 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:04:40,616 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:04:40,651 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:04:40,686 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:04:40,719 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:04:41,221 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-11 01:04:41,225 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/11/2015 1:04:41 AM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/11/2015 1:04:41 AM',0,'6/11/2015 1:04:41 AM','6/11/2015 1:04:41 AM','Rookey6/11/2015 1:04:41 AM','Rookey6/11/2015 1:04:41 AM')
+2015-06-11 01:04:41,278 [7] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak4','TYVAS4','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/11/2015 1:04:41 AM','thanh tu4',1,'/Images/IMG_20140315_173356.jpg',0,'6/11/2015 1:04:41 AM','Rookey4',1)
+2015-06-11 01:05:04,384 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-11 01:05:04,384 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/11/2015 1:05:04 AM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/11/2015 1:05:04 AM',0,'6/11/2015 1:05:04 AM','6/11/2015 1:05:04 AM','Rookey6/11/2015 1:05:04 AM','Rookey6/11/2015 1:05:04 AM')
+2015-06-11 01:05:04,411 [7] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak5','TYVAS5','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/11/2015 1:05:04 AM','thanh tu5',1,'/Images/IMG_20140315_173356.jpg',0,'6/11/2015 1:05:04 AM','Rookey5',1)
+2015-06-11 01:05:15,127 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:05:15,159 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:05:15,194 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:05:15,225 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:05:15,260 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-11 01:05:15,450 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-11 01:05:15,450 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/11/2015 1:05:15 AM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/11/2015 1:05:15 AM',0,'6/11/2015 1:05:15 AM','6/11/2015 1:05:15 AM','Rookey6/11/2015 1:05:15 AM','Rookey6/11/2015 1:05:15 AM')
+2015-06-11 01:05:15,458 [8] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak5','TYVAS5','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/11/2015 1:05:15 AM','thanh tu5',1,'/Images/IMG_20140315_173356.jpg',0,'6/11/2015 1:05:15 AM','Rookey5',1)
+2015-06-11 01:05:22,380 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-11 01:05:22,381 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/11/2015 1:05:22 AM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/11/2015 1:05:22 AM',0,'6/11/2015 1:05:22 AM','6/11/2015 1:05:22 AM','Rookey6/11/2015 1:05:22 AM','Rookey6/11/2015 1:05:22 AM')
+2015-06-11 01:05:22,387 [8] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak5','TYVAS5','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/11/2015 1:05:22 AM','thanh tu5',1,'/Images/IMG_20140315_173356.jpg',0,'6/11/2015 1:05:22 AM','Rookey5',1)
+2015-06-11 01:05:35,731 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-11 01:05:35,731 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/11/2015 1:05:35 AM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/11/2015 1:05:35 AM',0,'6/11/2015 1:05:35 AM','6/11/2015 1:05:35 AM','Rookey6/11/2015 1:05:35 AM','Rookey6/11/2015 1:05:35 AM')
+2015-06-11 01:05:35,741 [8] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak5','TYVAS5','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/11/2015 1:05:35 AM','thanh tu5',1,'/Images/IMG_20140315_173356.jpg',0,'6/11/2015 1:05:35 AM','Rookey5',1)

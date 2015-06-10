@@ -76,89 +76,174 @@ public  class MsSqlDataAccess
     {
         m_da = new AccessData();
     }
-
-    //public Attender CreateItemFromRow(DataRow row, IList<PropertyInfo> properties) 
-    //{
-    //    Attender item = new Attender();
-    //    try
-    //    {
-    //        foreach (var property in properties)
-    //        {
-    //            property.SetValue(item, row[property.Name], null);
-    //        }
-    //    }
-    //    catch(Exception ex)
-    //    {
-    //        m_logger.Error(ex.ToString());
-    //    }       
-    //    return item;
-    //}
-
-    //public List<Attender> DataTableToList( DataTable table)  
-    //{
-    //    IList<PropertyInfo> properties = typeof(Attender).GetProperties().ToList();
-    //    List<Attender> result = new List<Attender>();
-    //    try
-    //    {
-    //        for (int i = 0; i < table.Rows.Count; i++)
-    //        {
-    //            Attender item = CreateItemFromRow((DataRow)table.Rows[i], properties);
-    //            result.Add(item);
-    //        }            
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        m_logger.Error(ex.ToString());
-    //    }  
-    //    return result;
-    //}
+       
 
     #region GetAll Object List
 
+    public List<AttenderAndSponsor> GetAllAttenderAndSponsor_T()
+    {
+        List<AttenderAndSponsor> objList = new List<AttenderAndSponsor>();
+        string sqltext = "select * from AttenderAndSponsor";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<AttenderAndSponsor>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
     public List<Attender> GetAllAttender_T()
     {
-        List<Attender> attList = new List<Attender>();
+        List<Attender> objList = new List<Attender>();
         string sqltext = "select * from attender";
         try
         {
-            attList = ConvertData2Object.DataTableToList<Attender>(m_da.GetDataTable(sqltext));
+            objList = ConvertData2Object.DataTableToList<Attender>(m_da.GetDataTable(sqltext));
         }
         catch (Exception ex)
         {
             m_logger.Error(ex.ToString());
         }
-        return attList;
+        return objList;
     }
 
-    //public List<Attender> GetAll_Attender()
-    //{
-    //    List<Attender> attList = new List<Attender>();
-    //    string sqltext = "select * from attender";
-    //    try
-    //    {
-    //        DataTable dt = m_da.GetDataTable(sqltext);
-    //        attList =  DataTableToList(dt);
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        m_logger.Error(ex.ToString());
-    //    }
-    //    return attList;
-    //}
+    public List<AttenderEvent> GetAllAttenderEvent_T()
+    {
+        List<AttenderEvent> objList = new List<AttenderEvent>();
+        string sqltext = "select * from AttenderEvent";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<AttenderEvent>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Banner> GetAllBanner_T()
+    {
+        List<Banner> objList = new List<Banner>();
+        string sqltext = "select * from Banner";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Banner>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Category> GetAllCategory_T()
+    {
+        List<Category> objList = new List<Category>();
+        string sqltext = "select * from Category";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Category>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Comment> GetAllComment_T()
+    {
+        List<Comment> objList = new List<Comment>();
+        string sqltext = "select * from Comment";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Comment>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Doccument> GetAllDoccument_T()
+    {
+        List<Doccument> objList = new List<Doccument>();
+        string sqltext = "select * from Doccument";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Doccument>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Events> GetAllEvents_T()
+    {
+        List<Events> objList = new List<Events>();
+        string sqltext = "select * from Events";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Events>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Sharing> GetAllSharing_T()
+    {
+        List<Sharing> objList = new List<Sharing>();
+        string sqltext = "select * from Sharing";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Sharing>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<SponsorEvent> GetAllSponsorEvent_T()
+    {
+        List<SponsorEvent> objList = new List<SponsorEvent>();
+        string sqltext = "select * from SponsorEvent";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<SponsorEvent>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
 
     public List<Posts > GetAllPosts_T()
     {
-        List<Posts> attList = new List<Posts>();
+        List<Posts> objList = new List<Posts>();
         string sqltext = "select * from Posts";
         try
         {
-            attList = ConvertData2Object.DataTableToList<Posts>(m_da.GetDataTable(sqltext));
+            objList = ConvertData2Object.DataTableToList<Posts>(m_da.GetDataTable(sqltext));
         }
         catch (Exception ex)
         {
             m_logger.Error(ex.ToString());
         }
-        return attList;
+        return objList;
     }
 
     #endregion

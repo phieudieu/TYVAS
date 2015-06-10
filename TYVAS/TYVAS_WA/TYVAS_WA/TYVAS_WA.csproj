@@ -191,16 +191,30 @@
     <Content Include="views\partials\new-event.html" />
     <Content Include="views\partials\register-event.html" />
     <Content Include="views\partials\top-event.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\DataAcess\AccessData.cs" />
     <Content Include="App_Code\DataAcess\ConvertData2Object.cs" />
     <Compile Include="App_Code\DataAcess\MsSqlDataAccess.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AttenderAndSponsorController.cs" />
     <Compile Include="Controllers\AttenderController.cs" />
+    <Compile Include="Controllers\AttenderEventController.cs" />
+    <Compile Include="Controllers\BannerController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
+    <Compile Include="Controllers\DoccumentController.cs" />
+    <Compile Include="Controllers\EventLogController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\SharingController.cs" />
+    <Compile Include="Controllers\SponsorEventController.cs" />
+    <Compile Include="Controllers\TYASInfoController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
