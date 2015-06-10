@@ -1,0 +1,49 @@
+﻿<div class="admin-right-box add-new-event-box">
+    <div class="row admin-right-box-title">
+        <i class="fa fa-plus orange-color"></i> Tạo chương trình mới
+    </div>
+    <div class="form-group">
+        <label for="exampleInput1">Tên chương trình</label>
+        <input type="text" class="form-control" id="exampleInput1" placeholder="Nhập tên chương trình">
+    </div>
+    <div class="form-group">
+        <label for="exampleInput2">Địa điểm</label>
+        <input type="text" class="form-control" id="exampleInput2" placeholder="Nhập địa điểm">
+    </div>
+    <div class="row input-date-event">
+        <div class="col-md-6">
+            <label for="">Ngày bắt đầu</label>
+            <p class="input-group input-date">
+                <input type="text" placeholder="Chọn ngày bắt đầu" class="form-control" datepicker-popup ng-model="startDate" is-open="openedStartDate" min-date="today" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openStartDate($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <label for="">Ngày kết thúc</label>
+            <p class="input-group input-date">
+                <input type="text" placeholder="Chọn ngày kết thúc" class="form-control" datepicker-popup ng-model="endDate" is-open="openedEndDate" min-date="today" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openEndDate($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleInput4">Chi phí dự kiến</label>
+        <input type="text" class="form-control" id="exampleInput4" placeholder="Nhập chi phí dự kiến ex : 400.000 VND">
+    </div>
+    <div>
+        <div>
+            <p>Chi tiet chương trình</p>
+            <summernote ng-model="newEvent.description" height="150"></summernote>
+        </div>
+    </div>
+    <div class="margin-top10 text-right">
+        <button type="button" class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-primary">Reset</button>
+    </div>
+
+</div>

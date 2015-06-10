@@ -1,0 +1,688 @@
+2015-06-06 21:40:14,345 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:40:07 PM',null,'Rookey',null)
+2015-06-06 21:51:50,359 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:51:50 PM',null,'Rookey',null)
+2015-06-06 21:52:00,607 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:00 PM',null,'Rookey',null)
+2015-06-06 21:52:00,879 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:00 PM',null,'Rookey',null)
+2015-06-06 21:52:01,129 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:01 PM',null,'Rookey',null)
+2015-06-06 21:52:16,931 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:16 PM',null,'Rookey',null)
+2015-06-06 21:52:18,737 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:18 PM',null,'Rookey',null)
+2015-06-06 21:52:23,667 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:23 PM',null,'Rookey',null)
+2015-06-06 21:52:25,148 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:25 PM',null,'Rookey',null)
+2015-06-06 21:52:25,716 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:25 PM',null,'Rookey',null)
+2015-06-06 21:52:26,678 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:52:26 PM',null,'Rookey',null)
+2015-06-06 21:53:17,244 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 9:53:17 PM',null,'Rookey',null)
+2015-06-06 22:04:30,807 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 10:04:30 PM',null,'Rookey',null)
+2015-06-06 22:04:32,256 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 10:04:32 PM',null,'Rookey',null)
+2015-06-06 23:55:25,946 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-06 23:55:25,954 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 11:55:25 PM',null,'Rookey',null)
+2015-06-06 23:55:26,049 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-06 23:55:26,050 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 11:55:26 PM',null,'Rookey',null)
+2015-06-06 23:58:29,343 [12] INFO tynasProject.index [(null)] - Load....
+2015-06-06 23:58:29,359 [12] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/6/2015 11:58:29 PM',null,'Rookey',null)
+2015-06-07 00:00:38,148 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 00:00:38,172 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:00:38 AM',null,'Rookey',null)
+2015-06-07 00:00:38,251 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 00:00:38,252 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:00:38 AM',null,'Rookey',null)
+2015-06-07 00:41:03,565 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 00:41:03,579 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:41:03 AM',null,'Rookey',null)
+2015-06-07 00:42:09,891 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 00:42:09,907 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:42:09 AM',null,'Rookey',null)
+2015-06-07 00:42:09,971 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 00:42:09,987 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:42:09 AM',null,'Rookey',null)
+2015-06-07 11:05:56,690 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:05:56,706 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:05:56 AM',null,'Rookey',null)
+2015-06-07 11:05:56,798 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:05:56,798 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:05:56 AM',null,'Rookey',null)
+2015-06-07 11:06:48,656 [5] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:06:48,678 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:06:48 AM',null,'Rookey',null)
+2015-06-07 11:06:50,462 [13] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:06:50,463 [13] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:06:50 AM',null,'Rookey',null)
+2015-06-07 11:17:24,993 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:17:25,012 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:17:25 AM',null,'Rookey',null)
+2015-06-07 11:18:13,050 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:18:13,075 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:18:13 AM',null,'Rookey',null)
+2015-06-07 11:20:41,022 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:20:41,047 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:20:41 AM',null,'Rookey',null)
+2015-06-07 11:21:50,281 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:21:50,281 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:21:50 AM',null,'Rookey',null)
+2015-06-07 11:22:02,832 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:22:02,833 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:22:02 AM',null,'Rookey',null)
+2015-06-07 11:22:48,743 [14] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:22:48,744 [14] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:22:48 AM',null,'Rookey',null)
+2015-06-07 11:23:11,093 [14] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:23:11,093 [14] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:23:11 AM',null,'Rookey',null)
+2015-06-07 11:28:56,911 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:28:56,938 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:28:56 AM',null,'Rookey',null)
+2015-06-07 11:29:31,861 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:29:31,862 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:29:31 AM',null,'Rookey',null)
+2015-06-07 11:29:53,991 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:29:53,991 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:29:53 AM',null,'Rookey',null)
+2015-06-07 11:53:10,629 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:10,647 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:10 AM',null,'Rookey',null)
+2015-06-07 11:53:10,948 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:10,948 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:10 AM',null,'Rookey',null)
+2015-06-07 11:53:11,199 [11] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:11,228 [11] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:11 AM',null,'Rookey',null)
+2015-06-07 11:53:11,404 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:11,411 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:11 AM',null,'Rookey',null)
+2015-06-07 11:53:23,940 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:23,940 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:23 AM',null,'Rookey',null)
+2015-06-07 11:53:25,429 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:25,429 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:25 AM',null,'Rookey',null)
+2015-06-07 11:53:28,428 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:28,429 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:28 AM',null,'Rookey',null)
+2015-06-07 11:53:30,107 [11] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:30,107 [11] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:30 AM',null,'Rookey',null)
+2015-06-07 11:53:57,581 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:57,582 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:57 AM',null,'Rookey',null)
+2015-06-07 11:53:58,997 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 11:53:58,997 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 11:53:58 AM',null,'Rookey',null)
+2015-06-07 12:25:49,107 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:25:49,127 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:25:49 PM',null,'Rookey',null)
+2015-06-07 12:25:49,412 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:25:49,412 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:25:49 PM',null,'Rookey',null)
+2015-06-07 12:25:49,560 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:25:49,560 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:25:49 PM',null,'Rookey',null)
+2015-06-07 12:25:49,677 [12] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:25:49,702 [12] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:25:49 PM',null,'Rookey',null)
+2015-06-07 12:26:01,389 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:26:01,405 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:26:01 PM',null,'Rookey',null)
+2015-06-07 12:26:05,812 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:26:05,812 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:26:05 PM',null,'Rookey',null)
+2015-06-07 12:26:16,787 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:26:16,803 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:26:16 PM',null,'Rookey',null)
+2015-06-07 12:29:01,780 [15] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:29:01,806 [15] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:29:01 PM',null,'Rookey',null)
+2015-06-07 12:29:06,811 [15] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:29:06,811 [15] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:29:06 PM',null,'Rookey',null)
+2015-06-07 12:29:08,165 [15] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:29:08,166 [15] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:29:08 PM',null,'Rookey',null)
+2015-06-07 12:30:47,754 [16] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:30:47,755 [16] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:30:47 PM',null,'Rookey',null)
+2015-06-07 12:30:48,994 [16] INFO tynasProject.index [(null)] - Load....
+2015-06-07 12:30:48,994 [16] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 12:30:48 PM',null,'Rookey',null)
+2015-06-07 14:36:01,193 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:36:01,211 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:36:01 PM',null,'Rookey',null)
+2015-06-07 14:36:01,316 [8] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:36:01,317 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:36:01 PM',null,'Rookey',null)
+2015-06-07 14:37:34,648 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:37:34,670 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:37:34 PM',null,'Rookey',null)
+2015-06-07 14:38:52,760 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:38:52,781 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:38:52 PM',null,'Rookey',null)
+2015-06-07 14:39:36,357 [12] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:39:36,382 [12] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:39:36 PM',null,'Rookey',null)
+2015-06-07 14:39:36,794 [5] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:39:36,795 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:39:36 PM',null,'Rookey',null)
+2015-06-07 14:39:36,962 [12] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:39:36,963 [12] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:39:36 PM',null,'Rookey',null)
+2015-06-07 14:39:37,117 [5] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:39:37,118 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:39:37 PM',null,'Rookey',null)
+2015-06-07 14:39:37,802 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:39:37,803 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:39:37 PM',null,'Rookey',null)
+2015-06-07 14:39:38,583 [5] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:39:38,583 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:39:38 PM',null,'Rookey',null)
+2015-06-07 14:39:55,254 [5] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:39:55,277 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:39:55 PM',null,'Rookey',null)
+2015-06-07 14:40:46,788 [5] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:40:46,812 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:40:46 PM',null,'Rookey',null)
+2015-06-07 14:40:48,103 [12] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:40:48,103 [12] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:40:48 PM',null,'Rookey',null)
+2015-06-07 14:40:48,858 [5] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:40:48,859 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:40:48 PM',null,'Rookey',null)
+2015-06-07 14:40:49,211 [12] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:40:49,211 [12] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:40:49 PM',null,'Rookey',null)
+2015-06-07 14:52:40,139 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:52:40,158 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:52:40 PM',null,'Rookey',null)
+2015-06-07 14:54:46,862 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:54:46,886 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:54:46 PM',null,'Rookey',null)
+2015-06-07 14:55:12,383 [10] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:55:12,384 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:55:12 PM',null,'Rookey',null)
+2015-06-07 14:56:03,173 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:56:03,175 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:56:03 PM',null,'Rookey',null)
+2015-06-07 14:56:03,933 [14] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:56:03,933 [14] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:56:03 PM',null,'Rookey',null)
+2015-06-07 14:56:12,209 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:56:12,210 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:56:12 PM',null,'Rookey',null)
+2015-06-07 14:56:12,813 [14] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:56:12,813 [14] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:56:12 PM',null,'Rookey',null)
+2015-06-07 14:56:41,149 [9] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:56:41,149 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:56:41 PM',null,'Rookey',null)
+2015-06-07 14:56:41,563 [15] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:56:41,563 [15] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:56:41 PM',null,'Rookey',null)
+2015-06-07 14:57:05,013 [14] INFO tynasProject.index [(null)] - Load....
+2015-06-07 14:57:05,014 [14] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/7/2015 2:57:05 PM',null,'Rookey',null)
+2015-06-09 01:07:38,938 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:38,967 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:38 AM',null,'Rookey',null)
+2015-06-09 01:07:41,079 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:41,080 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:41 AM',null,'Rookey',null)
+2015-06-09 01:07:41,573 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:41,573 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:41 AM',null,'Rookey',null)
+2015-06-09 01:07:41,790 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:41,791 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:41 AM',null,'Rookey',null)
+2015-06-09 01:07:41,892 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:41,893 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:41 AM',null,'Rookey',null)
+2015-06-09 01:07:44,050 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:44,050 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:44 AM',null,'Rookey',null)
+2015-06-09 01:07:44,912 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:44,913 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:44 AM',null,'Rookey',null)
+2015-06-09 01:07:48,402 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:48,402 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:48 AM',null,'Rookey',null)
+2015-06-09 01:07:49,018 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:49,018 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:49 AM',null,'Rookey',null)
+2015-06-09 01:07:49,725 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:49,726 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:49 AM',null,'Rookey',null)
+2015-06-09 01:07:50,290 [10] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:50,291 [10] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:50 AM',null,'Rookey',null)
+2015-06-09 01:07:52,826 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:52,826 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:52 AM',null,'Rookey',null)
+2015-06-09 01:07:53,427 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:53,427 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:53 AM',null,'Rookey',null)
+2015-06-09 01:07:54,027 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:54,028 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:54 AM',null,'Rookey',null)
+2015-06-09 01:07:54,537 [9] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:54,538 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:54 AM',null,'Rookey',null)
+2015-06-09 01:07:57,196 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:57,196 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:57 AM',null,'Rookey',null)
+2015-06-09 01:07:57,660 [9] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:07:57,661 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:07:57 AM',null,'Rookey',null)
+2015-06-09 01:12:40,465 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:12:40,485 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:12:40 AM',null,'Rookey',null)
+2015-06-09 01:12:40,920 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:12:40,921 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:12:40 AM',null,'Rookey',null)
+2015-06-09 01:12:41,347 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:12:41,348 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:12:41 AM',null,'Rookey',null)
+2015-06-09 01:12:41,368 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:12:41,369 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:12:41 AM',null,'Rookey',null)
+2015-06-09 01:13:25,399 [5] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:13:34,493 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:13:27 AM',null,'Rookey',null)
+2015-06-09 01:13:48,858 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:13:48,858 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:13:48 AM',null,'Rookey',null)
+2015-06-09 01:13:49,011 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:13:49,012 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:13:49 AM',null,'Rookey',null)
+2015-06-09 01:13:49,134 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:13:49,134 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:13:49 AM',null,'Rookey',null)
+2015-06-09 01:13:53,807 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:13:53,808 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:13:53 AM',null,'Rookey',null)
+2015-06-09 01:13:58,232 [5] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:13:58,232 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:13:58 AM',null,'Rookey',null)
+2015-06-09 01:19:04,522 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 01:19:04,540 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 1:19:04 AM',null,'Rookey',null)
+2015-06-09 22:49:00,868 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 22:49:00,888 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 10:49:00 PM',null,'Rookey',null)
+2015-06-09 22:50:21,683 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 22:50:21,703 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 10:50:21 PM',null,'Rookey',null)
+2015-06-09 22:52:29,533 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-09 22:53:50,527 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/9/2015 10:53:50 PM',null,'Rookey',null)
+2015-06-10 18:52:20,016 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 70
+   at MsSqlDataAccess.DataTableToList(DataTable table) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 82
+   at MsSqlDataAccess.GetAll_Attender() in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 116
+2015-06-10 18:52:20,019 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 18:52:20,019 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 18:52:20,019 [9] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 18:52:28,933 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/10/2015 6:52:20 PM',null,'Rookey',null)
+2015-06-10 18:52:28,933 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/10/2015 6:52:20 PM',null,'Rookey',null)
+2015-06-10 18:52:28,933 [9] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/10/2015 6:52:20 PM',null,'Rookey',null)
+2015-06-10 18:53:13,527 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=26454; handshake=57;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at AccessData.OpenConnection()
+   at AccessData.ExecuteNonQuery(SqlCommand sqlcmd)
+ClientConnectionId:c7828677-ad63-431e-acde-21dcf614402c
+2015-06-10 18:53:15,673 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=26454; handshake=57;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at AccessData.ExecuteNonQuery(SqlCommand sqlcmd)
+   at AccessData.ExecuteNonQuery(String strQuery)
+ClientConnectionId:c7828677-ad63-431e-acde-21dcf614402c
+2015-06-10 18:54:21,452 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 70
+   at MsSqlDataAccess.DataTableToList(DataTable table) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 82
+   at MsSqlDataAccess.GetAll_Attender() in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 116
+2015-06-10 18:54:21,461 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 18:54:44,376 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/10/2015 6:54:41 PM',null,'Rookey','')
+2015-06-10 18:56:12,780 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 70
+   at MsSqlDataAccess.DataTableToList(DataTable table) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 82
+   at MsSqlDataAccess.GetAll_Attender() in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 116
+2015-06-10 18:58:16,508 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 70
+   at MsSqlDataAccess.DataTableToList(DataTable table) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 82
+   at MsSqlDataAccess.GetAll_Attender() in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 116
+2015-06-10 19:03:32,223 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:04:47,720 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:08:22,221 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:10:08,592 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:10:09,848 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:10:09,848 [8] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:10:14,598 [8] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/10/2015 7:10:12 PM',null,'Rookey','')
+2015-06-10 19:10:14,598 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu','Phieudieu54@gmail.com','','Quang Trung, Go Vap',0,'6/10/2015 7:10:09 PM',null,'Rookey','')
+2015-06-10 19:10:14,948 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:01,306 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:01,363 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:01,401 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:01,434 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:01,470 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:05,228 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:14:05,231 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:14:05 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:14:05 PM',0,'6/10/2015 7:14:05 PM','6/10/2015 7:14:05 PM','Rookey6/10/2015 7:14:05 PM','Rookey6/10/2015 7:14:05 PM')
+2015-06-10 19:14:14,060 [7] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:14,106 [7] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:14,163 [7] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:14,201 [7] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:14:14,201 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:14:14,215 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:14:14 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:14:14 PM',0,'6/10/2015 7:14:14 PM','6/10/2015 7:14:14 PM','Rookey6/10/2015 7:14:14 PM','Rookey6/10/2015 7:14:14 PM')
+2015-06-10 19:14:14,235 [7] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at MsSqlDataAccess.CreateItemFromRow(DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 72
+2015-06-10 19:29:41,564 [5] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 26
+   at ConvertData2Object.DataTableToList[T](DataTable table) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 44
+   at MsSqlDataAccess.GetAllAttender_T() in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 144
+2015-06-10 19:29:42,115 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:29:42,117 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:29:42 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:29:42 PM',0,'6/10/2015 7:29:42 PM','6/10/2015 7:29:42 PM','Rookey6/10/2015 7:29:42 PM','Rookey6/10/2015 7:29:42 PM')
+2015-06-10 19:30:21,497 [5] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:30:22,752 [5] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:30:22 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:30:22 PM',0,'6/10/2015 7:30:22 PM','6/10/2015 7:30:22 PM','Rookey6/10/2015 7:30:22 PM','Rookey6/10/2015 7:30:22 PM')
+2015-06-10 19:33:22,968 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:33:22,988 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:33:22 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:33:22 PM',0,'6/10/2015 7:33:22 PM','6/10/2015 7:33:22 PM','Rookey6/10/2015 7:33:22 PM','Rookey6/10/2015 7:33:22 PM')
+2015-06-10 19:50:55,685 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:50:55,734 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:50:55,814 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:50:55,848 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:50:55,907 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:50:55,907 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:50:55 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:50:55 PM',0,'6/10/2015 7:50:55 PM','6/10/2015 7:50:55 PM','Rookey6/10/2015 7:50:55 PM','Rookey6/10/2015 7:50:55 PM')
+2015-06-10 19:50:55,939 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:50:56,022 [7] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,View,Image,Actived,LastModifedDate,LastModifiedUser,Top) VALUES ('Chuong trinh DakLak','TYVAS','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 7:50:56 PM','thanh tu',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 7:50:56 PM','Rookey',1)
+2015-06-10 19:50:56,197 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'View'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at AccessData.ExecuteNonQuery(SqlCommand sqlcmd) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 241
+ClientConnectionId:71f56f2f-df3d-479d-bc08-d2b0a430fdb9
+2015-06-10 19:50:56,229 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'View'.
+   at AccessData.ExecuteNonQuery(SqlCommand sqlcmd) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 246
+   at AccessData.ExecuteNonQuery(String strQuery) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 207
+ClientConnectionId:71f56f2f-df3d-479d-bc08-d2b0a430fdb9
+2015-06-10 19:50:56,251 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'View'.
+   at AccessData.ExecuteNonQuery(String strQuery) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 212
+   at AccessData.InsertRow(String table, Object row, String[] column) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 308
+ClientConnectionId:71f56f2f-df3d-479d-bc08-d2b0a430fdb9
+2015-06-10 19:54:44,225 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:54:44,274 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:54:44,310 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:54:44,350 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:54:44,380 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:54:44,841 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:54:44,844 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:54:44 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:54:44 PM',0,'6/10/2015 7:54:44 PM','6/10/2015 7:54:44 PM','Rookey6/10/2015 7:54:44 PM','Rookey6/10/2015 7:54:44 PM')
+2015-06-10 19:54:44,866 [7] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak','TYVAS','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 7:54:44 PM','thanh tu',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 7:54:44 PM','Rookey',1)
+2015-06-10 19:54:45,029 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at AccessData.ExecuteNonQuery(SqlCommand sqlcmd) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 241
+ClientConnectionId:b2cb29f1-08f1-4853-bf52-9d450426ef62
+2015-06-10 19:54:45,054 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at AccessData.ExecuteNonQuery(SqlCommand sqlcmd) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 246
+   at AccessData.ExecuteNonQuery(String strQuery) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 207
+ClientConnectionId:b2cb29f1-08f1-4853-bf52-9d450426ef62
+2015-06-10 19:54:45,078 [7] ERROR AccessData [(null)] - System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at AccessData.ExecuteNonQuery(String strQuery) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 212
+   at AccessData.InsertRow(String table, Object row, String[] column) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\AccessData.cs:line 308
+ClientConnectionId:b2cb29f1-08f1-4853-bf52-9d450426ef62
+2015-06-10 19:56:02,448 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:56:02,448 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:56:02 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:56:02 PM',0,'6/10/2015 7:56:02 PM','6/10/2015 7:56:02 PM','Rookey6/10/2015 7:56:02 PM','Rookey6/10/2015 7:56:02 PM')
+2015-06-10 19:56:02,456 [6] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak','TYVAS','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 7:56:02 PM','thanh tu',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 7:56:02 PM','Rookey',1)
+2015-06-10 19:56:17,095 [7] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:56:17,116 [7] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:56:17 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:56:17 PM',0,'6/10/2015 7:56:17 PM','6/10/2015 7:56:17 PM','Rookey6/10/2015 7:56:17 PM','Rookey6/10/2015 7:56:17 PM')
+2015-06-10 19:56:17,243 [7] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak','TYVAS','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 7:56:17 PM','thanh tu',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 7:56:17 PM','Rookey',1)
+2015-06-10 19:56:17,404 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:56:17,475 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:56:17,534 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:56:17,570 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:56:17,603 [6] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:57:21,337 [5] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:57:21,442 [5] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:57:21,489 [5] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:57:21,548 [5] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:57:21,625 [5] ERROR MsSqlDataAccess [(null)] - System.ArgumentException: Object of type 'System.DBNull' cannot be converted to type 'System.DateTime'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at ConvertData2Object.CreateItemFromRow[T](DataRow row, IList`1 properties) in f:\Project Crazy\APP\WebsiteTYVAS\trunk\TYVAS\TYVAS_WA\TYVAS_WA\App_Code\DataAcess\MsSqlDataAccess.cs:line 30
+2015-06-10 19:57:21,915 [6] INFO TYVAS_WA.index [(null)] - Load....
+2015-06-10 19:57:21,923 [6] INFO AccessData [(null)] - INSERT INTO Attender (FullName,Email,Phone,Address,Type,CreatedDate,LastModifedDate,CreatedUser,LastModifiedUser) VALUES ('Nguyen Thanh Tu6/10/2015 7:57:21 PM','Phieudieu54@gmail.com','','Quang Trung, Go Vap6/10/2015 7:57:21 PM',0,'6/10/2015 7:57:21 PM','6/10/2015 7:57:21 PM','Rookey6/10/2015 7:57:21 PM','Rookey6/10/2015 7:57:21 PM')
+2015-06-10 19:57:21,976 [6] INFO AccessData [(null)] - INSERT INTO Posts (Title,Keyword,Content,ShortContent,CreatedDate,CreatedBy,ViewNbr,Image,Actived,LastModifedDate,LastModifiedUser,TopNbr) VALUES ('Chuong trinh DakLak57','TYVAS57','Tinh Yeu va anh sang ...........................................','Tinh Yeu va anh sang ...........................................','6/10/2015 7:57:21 PM','thanh tu57',1,'/Images/IMG_20140315_173356.jpg',0,'6/10/2015 7:57:21 PM','Rookey57',1)

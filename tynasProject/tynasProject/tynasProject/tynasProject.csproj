@@ -114,6 +114,10 @@
     <Content Include="lib\ocLazyLoad\ocLazyLoad.min.js.map" />
     <Content Include="lib\ocLazyLoad\ocLazyLoad.require.js.map" />
     <Content Include="lib\ocLazyLoad\ocLazyLoad.require.min.js.map" />
+    <Content Include="lib\summernote\angular-summernote.js" />
+    <Content Include="lib\summernote\summernote.css" />
+    <Content Include="lib\summernote\summernote.js" />
+    <Content Include="lib\summernote\summernote.min.js" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -188,15 +192,22 @@
     <Content Include="template\footer_import.html" />
     <Content Include="template\header_import.html" />
     <Content Include="template\layout.html" />
+    <Content Include="views\admin\add-new-event.html" />
+    <Content Include="views\admin\admin.html" />
+    <Content Include="views\admin\events-admin.html" />
+    <Content Include="views\admin\user-admin.html" />
     <Content Include="views\full-page.html" />
+    <Content Include="views\partials\about.html" />
     <Content Include="views\partials\banner-top.html" />
     <Content Include="views\partials\block-right.html" />
+    <Content Include="views\partials\contact.html" />
     <Content Include="views\partials\event-detail.html" />
     <Content Include="views\partials\events.html" />
     <Content Include="views\partials\footer-info.html" />
     <Content Include="views\partials\main-event.html" />
     <Content Include="views\partials\menu-top.html" />
     <Content Include="views\partials\new-event.html" />
+    <Content Include="views\partials\register-event.html" />
     <Content Include="views\partials\top-event.html" />
     <Content Include="Web.config" />
   </ItemGroup>
