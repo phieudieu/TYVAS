@@ -14,7 +14,8 @@ namespace TYVAS_WA.Controllers
         public string GetAllAttender()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllTYASInfo();
+            List<TYASInfo> lst = da.GetAllTYASInfo_T();
+            return da.Object2Json(lst, "TYASInfo", lst.Count);
         }
     }
 }

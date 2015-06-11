@@ -9,19 +9,14 @@ namespace TYVAS_WA.Controllers
 {
     public class AttenderEventController : ApiController
     {
-        //[HttpGet]
-        //[Route("~/api/AttenderEvent")]
-        //public List<AttenderEvent> GetAllAttenderAndSponsor()
-        //{
-        //    MsSqlDataAccess da = new MsSqlDataAccess();
-        //    return da.GetAllAttenderEvent_T();
-        //}
+        
         [HttpGet]
         [Route("~/api/AttenderEvent")]
         public string GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllAttenderEvent();
+            List<AttenderEvent> lst = da.GetAllAttenderEvent_T();
+            return da.Object2Json(lst, "AttenderEvent", lst.Count);
         }
 
     }

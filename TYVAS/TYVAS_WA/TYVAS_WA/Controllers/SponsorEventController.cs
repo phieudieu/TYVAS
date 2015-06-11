@@ -14,7 +14,8 @@ namespace TYVAS_WA.Controllers
         public string  GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllSponsorEvent();
+            List<SponsorEvent> lst = da.GetAllSponsorEvent_T();
+            return da.Object2Json(lst, "SponsorEvent", lst.Count);
         }
 
     }

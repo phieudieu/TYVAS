@@ -14,7 +14,8 @@ namespace TYVAS_WA.Controllers
         public string GetAllAttender()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllUser();
+            List<User> lst = da.GetAllUser_T();
+            return da.Object2Json(lst, "User", lst.Count);
         }
     }
 }

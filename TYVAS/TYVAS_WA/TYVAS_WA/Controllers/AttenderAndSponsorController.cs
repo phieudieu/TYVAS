@@ -9,19 +9,14 @@ namespace TYVAS_WA.Controllers
 {
     public class AttenderAndSponsorController : ApiController
     {
-        //[HttpGet]
-        //[Route("~/api/AttenderAndSponsor")]
-        //public List<AttenderAndSponsor> GetAllAttenderAndSponsor()
-        //{
-        //    MsSqlDataAccess da = new MsSqlDataAccess();
-        //    return da.GetAllAttenderAndSponsor_T();
-        //}
+       
         [HttpGet]
         [Route("~/api/AttenderAndSponsor")]
         public string  GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllAttenderAndSponsor();
+            List< AttenderAndSponsor > lst = da.GetAllAttenderAndSponsor_T();
+            return da.Object2Json(lst, "AttenderAndSponsor", lst.Count);
         }
 
     }
