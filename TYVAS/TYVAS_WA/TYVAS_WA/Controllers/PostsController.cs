@@ -11,10 +11,10 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Posts")]
-        public List<Posts> GetAllAttender()
+        public string  GetAllAttender()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllPosts_T();
+            return da.GetAllPosts();
         }
     }
 }

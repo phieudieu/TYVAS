@@ -9,12 +9,12 @@ namespace TYVAS_WA.Controllers
 {
     public class SponsorEventController : ApiController
     {
-         [HttpGet]
+        [HttpGet]
         [Route("~/api/SponsorEvent")]
-        public List<SponsorEvent> GetAllAttenderAndSponsor()
+        public string  GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllSponsorEvent_T();
+            return da.GetAllSponsorEvent();
         }
 
     }

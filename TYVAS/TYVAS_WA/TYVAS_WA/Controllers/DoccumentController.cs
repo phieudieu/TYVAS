@@ -11,10 +11,10 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Doccument")]
-        public List<Doccument> GetAllAttenderAndSponsor()
+        public string  GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllDoccument_T();
+            return da.GetAllDoccument();
         }
     }
 }

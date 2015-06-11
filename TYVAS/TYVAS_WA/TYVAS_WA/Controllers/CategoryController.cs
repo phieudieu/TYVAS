@@ -9,12 +9,20 @@ namespace TYVAS_WA.Controllers
 {
     public class CategoryController : ApiController
     {
+        //[HttpGet]
+        //[Route("~/api/Category")]
+        //public List<Category> GetAllAttenderAndSponsor()
+        //{
+        //    MsSqlDataAccess da = new MsSqlDataAccess();
+        //    return da.GetAllCategory_T();
+        //}
+
         [HttpGet]
         [Route("~/api/Category")]
-        public List<Category> GetAllAttenderAndSponsor()
+        public string GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllCategory_T();
+            return da.GetAllCategory();
         }
     }
 }

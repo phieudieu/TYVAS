@@ -11,10 +11,10 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Comment")]
-        public List<Comment> GetAllAttenderAndSponsor()
+        public  string  GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllComment_T();
+            return da.GetAllComment();
         }
     }
 }

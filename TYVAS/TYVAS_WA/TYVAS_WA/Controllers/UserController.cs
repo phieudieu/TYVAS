@@ -9,5 +9,12 @@ namespace TYVAS_WA.Controllers
 {
     public class UserController : ApiController
     {
+        [HttpGet]
+        [Route("~/api/User")]
+        public string GetAllAttender()
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.GetAllUser();
+        }
     }
 }

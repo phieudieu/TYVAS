@@ -9,12 +9,20 @@ namespace TYVAS_WA.Controllers
 {
     public class BannerController : ApiController
     {
+        //[HttpGet]
+        //[Route("~/api/Banner")]
+        //public List<Banner> GetAllAttenderAndSponsor()
+        //{
+        //    MsSqlDataAccess da = new MsSqlDataAccess();
+        //    return da.GetAllBanner_T();
+        //}
+
         [HttpGet]
         [Route("~/api/Banner")]
-        public List<Banner> GetAllAttenderAndSponsor()
+        public string GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllBanner_T();
+            return da.GetAllBanner();
         }
 
     }

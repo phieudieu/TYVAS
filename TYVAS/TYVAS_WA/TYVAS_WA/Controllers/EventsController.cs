@@ -11,10 +11,10 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Events")]
-        public List<Events> GetAllAttenderAndSponsor()
+        public string  GetAllAttenderAndSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
-            return da.GetAllEvents_T();
+            return da.GetAllEvents();
         }
     }
 }
