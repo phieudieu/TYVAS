@@ -7,6 +7,7 @@ using System.Data;
 using System.Reflection;
 using System.Configuration;
 using System.Data.SqlClient;
+ 
 
 public static class ConvertData2Object
 {
@@ -76,7 +77,57 @@ public  class MsSqlDataAccess
     {
         m_da = new AccessData();
     }
-       
+
+    #region Json utils
+    public string Object2Json(object obj, string objectname, int itemcount)
+    {
+        string json = "";
+        Dictionary<string, object> dic = new Dictionary<string, object>();
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        try
+        {
+            dic.Add(objectname, obj);
+            dic.Add("ItemCount", itemcount.ToString());
+            json = serializer.Serialize(dic);
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+            json = ex.ToString();
+        }
+        return json;
+    }
+
+    public void AddObject2Dictionary(ref Dictionary<string, object> dic, object ojb, string objname, int itemcount)
+    {
+        try
+        {
+            dic.Add(objname, ojb);
+            dic.Add("ItemCount", itemcount);
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+    }
+
+    public string Dictionary2Json(Dictionary<string, object> dic)
+    {
+        string json = "";
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        try
+        {
+            json = serializer.Serialize(dic);
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+            json = ex.ToString();
+        }
+        return json;
+    }
+
+    #endregion
 
     #region GetAll Object List
 
@@ -229,8 +280,7 @@ public  class MsSqlDataAccess
         }
         return objList;
     }
-
-
+    
     public List<Posts > GetAllPosts_T()
     {
         List<Posts> objList = new List<Posts>();
@@ -246,9 +296,47 @@ public  class MsSqlDataAccess
         return objList;
     }
 
+    public List<TYASInfo> GetAllTYASInfo_T()
+    {
+        List<TYASInfo> objList = new List<TYASInfo>();
+        string sqltext = "select * from TYASInfo";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<TYASInfo>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<User> GetAllUser_T()
+    {
+        List<User> objList = new List<User>();
+        string sqltext = "select * from User";
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<User>(m_da.GetDataTable(sqltext));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
     #endregion
 
-    #region GetAll Object
+    #region Get All Object
+
+    public static string ReplaceWith(string text)
+    {
+        string result =text;
+        result = result.Replace ("<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">","");
+        result = result.Replace("</string>", "");    
+        return result;
+    }
 
     public static string DataTableToJSON(DataTable table)
     {
@@ -264,10 +352,11 @@ public  class MsSqlDataAccess
             }
             list.Add(dict);
         }
-        JavaScriptSerializer serializer = new JavaScriptSerializer();
-        return serializer.Serialize(list);
-    }
        
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        return  ReplaceWith(serializer.Serialize(list));
+    }    
+
     public string GetAllAttender()
     {
         string json = "";
@@ -313,7 +402,6 @@ public  class MsSqlDataAccess
         return json;
     }
 
-
     public string GetAllBanner()
     {
         string json = "";
@@ -328,7 +416,6 @@ public  class MsSqlDataAccess
         }
         return json;
     }
-
 
     public string GetAllCategory()
     {
@@ -449,6 +536,7 @@ public  class MsSqlDataAccess
         }
         return json;
     }
+
     public string GetAllTYASInfo()
     {
         string json = "";
@@ -641,16 +729,6 @@ public  class MsSqlDataAccess
     }
     #endregion
 
-    //#region JQ
-
-    //private readonly string connectionString = ConfigurationManager.ConnectionStrings["cnndb"].ConnectionString;
-    //public IEnumerable<Attender > GetAll()
-    //{
-    //    using (var connection = new SqlConnection(connectionString))
-    //    {
-    //        return connection.Query<Attender>( "",  null, commandType: CommandType.Text ).AsQueryable();
-    //    }
-    //}
-    //#endregion
+     
 
 }
