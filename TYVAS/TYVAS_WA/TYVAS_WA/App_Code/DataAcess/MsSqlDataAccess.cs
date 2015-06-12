@@ -312,13 +312,13 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<User> GetAllUser_T()
+    public List<Users> GetAllUser_T()
     {
-        List<User> objList = new List<User>();
-        string sqltext = "select * from User";
+        List<Users> objList = new List<Users>();
+        string sqltext = "select * from Users";
         try
         {
-            objList = ConvertData2Object.DataTableToList<User>(m_da.GetDataTable(sqltext));
+            objList = ConvertData2Object.DataTableToList<Users>(m_da.GetDataTable(sqltext));
         }
         catch (Exception ex)
         {
@@ -626,10 +626,10 @@ public  class MsSqlDataAccess
         string[] col = { "Title", "Description", "Author", "CreatedDate", "LastModifedDate", "LastModifiedUser" };
         return m_da.InsertRow("Sharing", obj, col);
     }
-    public bool InsertUser(User obj)
+    public bool InsertUser(Users obj)
     {
         string[] col = { "UserID", "FirstName", "LMName", "Sex", "Email", "BirthDay", "UserName", "PassWord", "Image", "CreatedDate", "LastUpdate", "Actived", "Status", "IDReset" };
-        return m_da.InsertRow("User", obj, col);
+        return m_da.InsertRow("Users", obj, col);
     }
     public bool InsertUser(TYASInfo obj)
     {
@@ -716,11 +716,11 @@ public  class MsSqlDataAccess
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Sharing", obj, col, where);
     }
-    public bool UpdateUser(User obj)
+    public bool UpdateUser(Users obj)
     {
         string[] col = { "UserID", "FirstName", "LMName", "Sex", "Email", "BirthDay", "UserName", "PassWord", "Image", "CreatedDate", "LastUpdate", "Actived", "Status", "IDReset" };
         string where = string.Format(" UserID = '{0}'", obj.UserID);
-        return m_da.UpdateRow("User", obj, col, where);
+        return m_da.UpdateRow("Users", obj, col, where);
     }
     public bool UpdateUser(TYASInfo obj)
     {

@@ -7,7 +7,7 @@ using System.Drawing;
 /// <summary>
 /// Summary description for User
 /// </summary>
-public class User
+public class Users
 {
     private string m_UserID;
     private string m_FirstName;
@@ -17,13 +17,13 @@ public class User
     private DateTime m_BirthDay;
     private string m_UserName;
     private string m_PassWord;
-    private Image m_Image;
+    private string m_Image;
     private DateTime m_CreatedDate;
     private DateTime m_LastUpdate;
     private int m_Actived;
     private int m_Status;
     private string m_IDReset;
-    public User()
+    public Users()
     {
         m_UserID = String.Empty;
         m_FirstName = String.Empty;
@@ -33,7 +33,7 @@ public class User
         m_BirthDay = DateTime.MinValue;
         m_UserName = String.Empty;
         m_PassWord = String.Empty;
-        m_Image = null;
+        m_Image = String.Empty;
         m_CreatedDate = DateTime.MinValue;
         m_LastUpdate = DateTime.MinValue;
         m_Actived = 0;
@@ -80,7 +80,7 @@ public class User
         get { return m_PassWord; }
         set { m_PassWord = value; }
     }
-    public Image Image
+    public string Image
     {
         get { return m_Image; }
         set { m_Image = value; }
