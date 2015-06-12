@@ -8,24 +8,24 @@ using System.Web;
 /// </summary>
 public class SponsorEvent
 {
-    private string m_IDSponsor;
+    private int  m_IDSponsor;
     private int m_IDEvent;
     private Decimal m_Donate;
     private DateTime m_CreatedDate;
     private DateTime m_LastModifedDate;
-    private DateTime m_CreatedUser;
-    private DateTime m_LastModifiedUser;
+    private string m_CreatedUser;
+    private string m_LastModifiedUser;
     public SponsorEvent()
     {
-        m_IDSponsor = String.Empty;
+        m_IDSponsor = 0;
         m_IDEvent = 0;
         m_Donate = 0;
         m_CreatedDate = DateTime.MinValue;
         m_LastModifedDate = DateTime.MinValue;
-        m_CreatedUser = DateTime.MinValue;
-        m_LastModifiedUser = DateTime.MinValue;
+        m_CreatedUser = String.Empty;
+        m_LastModifiedUser = String.Empty;
     }
-    public string IDSponsor
+    public int  IDSponsor
     {
         get { return m_IDSponsor; }
         set { m_IDSponsor = value; }
@@ -50,12 +50,12 @@ public class SponsorEvent
         get { return m_LastModifedDate; }
         set { m_LastModifedDate = value; }
     }
-    public DateTime CreatedUser
+    public string CreatedUser
     {
         get { return m_CreatedUser; }
         set { m_CreatedUser = value; }
     }
-    public DateTime LastModifiedUser
+    public string  LastModifiedUser
     {
         get { return m_LastModifiedUser; }
         set { m_LastModifiedUser = value; }

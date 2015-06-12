@@ -14,7 +14,7 @@ public class Sharing
     private string m_Author;
     private DateTime m_CreatedDate;
     private DateTime m_LastModifedDate;
-    private DateTime m_LastModifiedUser;
+    private string m_LastModifiedUser;
     public Sharing()
     {
         m_ID = 0;
@@ -23,7 +23,7 @@ public class Sharing
         m_Author = String.Empty;
         m_CreatedDate = DateTime.MinValue;
         m_LastModifedDate = DateTime.MinValue;
-        m_LastModifiedUser = DateTime.MinValue;
+        m_LastModifiedUser = String.Empty;
     }
     public int ID
     {
@@ -55,7 +55,7 @@ public class Sharing
         get { return m_LastModifedDate; }
         set { m_LastModifedDate = value; }
     }
-    public DateTime LastModifiedUser
+    public string  LastModifiedUser
     {
         get { return m_LastModifiedUser; }
         set { m_LastModifiedUser = value; }

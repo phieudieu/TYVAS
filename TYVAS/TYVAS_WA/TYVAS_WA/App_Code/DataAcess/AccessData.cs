@@ -363,7 +363,7 @@ public class AccessData
                                     }
                                     else
                                     {
-                                        sqltext2.AppendFormat("{0}'{1}'", c, p.GetValue(row, null));
+                                        sqltext2.AppendFormat("{0}N'{1}'", c, p.GetValue(row, null));
                                     }
                                 }
                                 break;
@@ -381,7 +381,7 @@ public class AccessData
                             default:
                                 if (p.GetValue(row, null) != null)
                                 {
-                                    sqltext2.AppendFormat("{0}'{1}'", c, p.GetValue(row, null));
+                                    sqltext2.AppendFormat("{0}N'{1}'", c, p.GetValue(row, null));
                                 }
                                 break;
                         }
@@ -410,7 +410,7 @@ public class AccessData
                                     }
                                     else
                                     {
-                                        sqltext2.AppendFormat("{0}'{1}'", c, item.GetValue(row, null));
+                                        sqltext2.AppendFormat("{0}N'{1}'", c, item.GetValue(row, null));
                                     }
                                 }
                                 break;
@@ -428,7 +428,7 @@ public class AccessData
                             default:
                                 if (item.GetValue(row, null) != null)
                                 {
-                                    sqltext2.AppendFormat("{0}'{1}'", c, item.GetValue(row, null));
+                                    sqltext2.AppendFormat("{0}N'{1}'", c, item.GetValue(row, null));
                                 }
                                 break;
                         }

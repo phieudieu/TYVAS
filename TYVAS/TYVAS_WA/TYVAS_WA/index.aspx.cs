@@ -18,16 +18,25 @@ namespace TYVAS_WA
             MsSqlDataAccess da = new MsSqlDataAccess();
             Attender att = new Attender();
 
-            att.Address = "Quang Trung, Go Vap" + DateTime.Now.ToString();
+            att.Address = "Quang Trung, Go Vap Attender" + DateTime.Now.ToString();
             att.CreatedDate = DateTime.Now;
-            att.CreatedUser = "Rookey" + DateTime.Now.ToString();
+            att.CreatedUser = "Rookey Attender" + DateTime.Now.ToString();
             att.Email = "Phieudieu54@gmail.com";
-            att.FullName = "Nguyen Thanh Tu" + DateTime.Now.ToString();
+            att.FullName = "Nguyen Thanh Tu Attender" + DateTime.Now.ToString();
             att.LastModifedDate =  DateTime.Now;
-            att.LastModifiedUser = "Rookey" + DateTime.Now.ToString();
+            att.LastModifiedUser = "Rookey Attender" + DateTime.Now.ToString();
             da.InsertAttender(att);
-            
-            //string attstr = da.GetAllAttender();
+
+            Sponsor sp = new Sponsor();
+
+            sp.Address = "Quang Trung, Go Vap Sponsor" + DateTime.Now.ToString();
+            sp.CreatedDate = DateTime.Now;
+            sp.CreatedUser = "Rookey Sponsor" + DateTime.Now.ToString();
+            sp.Email = "Phieudieu54@gmail.com";
+            sp.FullName = "Nguyen Thanh Tu Sponsor" + DateTime.Now.ToString();
+            sp.LastModifedDate = DateTime.Now;
+            sp.LastModifiedUser = "Rookey Sponsor" + DateTime.Now.ToString();
+            da.InsertSponsor(sp);
 
             Posts p = new Posts();
             p.Actived = 0;
@@ -42,10 +51,62 @@ namespace TYVAS_WA
             p.Title = "Chuong trinh DakLak" + DateTime.Now.Minute.ToString();
             p.TopNbr = 1;
             p.ViewNbr = 1;
-
             da.InsertPosts(p);
 
 
+            Banner bn = new Banner();
+            bn.Description = "Top" + DateTime.Now.Minute.ToString ();
+            bn.ImageName = "BannerTop";
+            bn.Path = "/BannerTop.png";
+            da.InsertBanner(bn);
+
+            Comment cm = new Comment();
+            cm.Actived = 1;
+            cm.ApprovedBy = "TT";
+            cm.ApprovedDate = DateTime.Now;
+            cm.CMDate = DateTime.Now;
+            cm.PID = DateTime.Now.Millisecond ;
+            cm.Reason = "";
+            cm.UserID = DateTime.Now.ToString("MMddyyyyHHmmss");
+            da.InsertComment(cm);
+
+
+            Events ev = new Events();
+            ev.Address = "NVL Go Vap";
+            ev.Amount = 1000000;
+            ev.Banner = "/Banner.png";
+            ev.CreatedDate = DateTime.Now;
+            ev.CreatedUser = "TT";
+            ev.Description = "Chuyến đi tới...";
+            ev.EndDate = DateTime.Now;
+            ev.FeeJoin = 200000;
+            ev.Images = "/Image.png";
+            ev.LastModifedDate = DateTime.Now;
+            ev.LastModifiedUser = "TT";
+            ev.Reference = "";
+            ev.StartDate = DateTime.Now;
+            ev.Title = "Title";
+            ev.Status = 1;
+            da.InsertEvents(ev);
+
+            Sharing sh = new Sharing();
+            sh.Author = "TT";
+            sh.CreatedDate = DateTime.Now;
+            sh.Description = "Share posts";
+            sh.LastModifedDate = DateTime.Now;
+            sh.LastModifiedUser = "TT";
+            sh.Title = "share";
+            da.InsertSharing(sh);
+
+            SponsorEvent sv = new SponsorEvent();
+            sv.CreatedDate = DateTime.Now;
+            sv.CreatedUser = "TT";
+            sv.Donate = 100;
+            sv.IDEvent = 1;
+            sv.IDSponsor = 1;
+            sv.LastModifedDate = DateTime.Now;
+            sv.LastModifiedUser = "TT";
+            da.InsertSponsorEvent(sv);
 
         }
     }

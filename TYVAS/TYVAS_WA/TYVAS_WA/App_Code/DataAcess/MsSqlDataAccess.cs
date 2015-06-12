@@ -79,6 +79,7 @@ public  class MsSqlDataAccess
     }
 
     #region Json utils
+
     public string Object2Json(object obj, string objectname, int itemcount)
     {
         string json = "";
@@ -131,13 +132,13 @@ public  class MsSqlDataAccess
 
     #region GetAll Object List
 
-    public List<AttenderAndSponsor> GetAllAttenderAndSponsor_T()
+    public List<Sponsor> GetAllSponsor_T()
     {
-        List<AttenderAndSponsor> objList = new List<AttenderAndSponsor>();
-        string sqltext = "select * from AttenderAndSponsor";
+        List<Sponsor> objList = new List<Sponsor>();
+        string sqltext = "select * from Sponsor";
         try
         {
-            objList = ConvertData2Object.DataTableToList<AttenderAndSponsor>(m_da.GetDataTable(sqltext));
+            objList = ConvertData2Object.DataTableToList<Sponsor>(m_da.GetDataTable(sqltext));
         }
         catch (Exception ex)
         {
@@ -566,10 +567,10 @@ public  class MsSqlDataAccess
         return m_da.InsertRow("Attender", obj, col);
     }
 
-    public bool InsertAttenderAndSponsor(AttenderAndSponsor obj)
+    public bool InsertSponsor(Sponsor obj)
     {
         string[] col = { "FullName", "Email", "Phone", "Address", "Type", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
-        return m_da.InsertRow("AttenderAndSponsor", obj, col);
+        return m_da.InsertRow("Sponsor", obj, col);
     }
 
     public bool InsertAttenderEvent(AttenderEvent obj)
@@ -645,11 +646,11 @@ public  class MsSqlDataAccess
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Attender", obj, col, where);
     }
-    public bool UpdateAttenderAndSponsor(AttenderAndSponsor obj)
+    public bool UpdateAttenderAndSponsor(Sponsor obj)
     {
         string[] col = { "FullName", "Email", "Phone", "Address", "Type", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
         string where = string.Format(" ID = {0}", obj.ID);
-        return m_da.UpdateRow("AttenderAndSponsor", obj, col, where);
+        return m_da.UpdateRow("Sponsor", obj, col, where);
     }
 
     public bool UpdateAttenderEvent(AttenderEvent obj)
