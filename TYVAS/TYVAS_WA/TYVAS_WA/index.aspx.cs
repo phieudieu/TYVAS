@@ -18,14 +18,15 @@ namespace TYVAS_WA
             MsSqlDataAccess da = new MsSqlDataAccess();
             Attender att = new Attender();
 
-            att.Address = "Quang Trung, Go Vap Attender" + DateTime.Now.ToString();
+         att.Address = "Quang Trung, Go Vap Attender" + DateTime.Now.ToString();
             att.CreatedDate = DateTime.Now;
             att.CreatedUser = "Rookey Attender" + DateTime.Now.ToString();
             att.Email = "Phieudieu54@gmail.com";
             att.FullName = "Nguyen Thanh Tu Attender" + DateTime.Now.ToString();
             att.LastModifedDate =  DateTime.Now;
             att.LastModifiedUser = "Rookey Attender" + DateTime.Now.ToString();
-            da.InsertAttender(att);
+            string newid = "ID";
+            da.InsertAttender(att, newid);
 
             Sponsor sp = new Sponsor();
 
@@ -122,7 +123,7 @@ namespace TYVAS_WA
             u.UserID = DateTime.Now.ToString("ffff");
             u.UserName = DateTime.Now.ToString("MMddyyffff");
             u.Image = "/Image.png";
-            da.InsertUser(u);
+            da.InsertUsers(u);
         }
     }
 }
