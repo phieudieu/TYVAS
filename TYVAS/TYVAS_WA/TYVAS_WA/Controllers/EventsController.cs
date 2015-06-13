@@ -11,7 +11,7 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Events")]
-        public string  GetAllAttenderAndSponsor()
+        public string GetAllEvents()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Events> lst = da.GetAllEvents_T();
@@ -20,11 +20,19 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Events/{id}")]
-        public string GetAllAttenderAndSponsor(int id = -1)
+        public string GetEventsBy(int id = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Events> lst = da.GetAllEvents_T(id);
             return da.Object2Json(lst, "Events", lst.Count);
+        }
+
+        [HttpPost]
+        [Route("~/api/Events")]
+        public string InsertEvents(Events obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertEvents(obj).ToString();
         }
 
     }

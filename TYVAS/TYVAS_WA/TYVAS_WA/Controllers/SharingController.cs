@@ -11,7 +11,7 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Sharing")]
-        public string  GetAllAttenderAndSponsor()
+        public string GetAllSharing()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Sharing> lst = da.GetAllSharing_T();
@@ -20,11 +20,19 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Sharing/{id}")]
-        public string GetAllAttenderAndSponsor(int id = -1)
+        public string GetSharingBy(int id = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Sharing> lst = da.GetAllSharing_T(id);
             return da.Object2Json(lst, "Sharing", lst.Count);
+        }
+
+        [HttpPost]
+        [Route("~/api/Sharing")]
+        public string InsertSharing(Sharing obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertSharing(obj).ToString();
         }
 
     }

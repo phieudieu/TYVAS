@@ -11,7 +11,7 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Comment")]
-        public  string  GetAllAttenderAndSponsor()
+        public string GetComment()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Comment> lst = da.GetAllComment_T();
@@ -20,14 +20,20 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Comment/{id}")]
-        public string GetAllAttenderAndSponsor(int id = -1)
+        public string GetCommentBy(int id = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Comment> lst = da.GetAllComment_T(id);
             return da.Object2Json(lst, "Comment", lst.Count);
         }
 
-
+        [HttpPost]
+        [Route("~/api/Comment")]
+        public string InsertComment(Comment obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertComment(obj).ToString();
+        }
 
     }
 }

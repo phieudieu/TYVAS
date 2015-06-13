@@ -12,7 +12,7 @@ namespace TYVAS_WA.Controllers
         
         [HttpGet]
         [Route("~/api/Banner")]
-        public string GetAllAttenderAndSponsor()
+        public string GetAllBanner()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Banner> lst = da.GetAllBanner_T();
@@ -21,12 +21,19 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Banner/{id}")]
-        public string GetAllAttenderAndSponsor(int id = -1)
+        public string GetAttenderBannerBy(int id = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Banner> lst = da.GetAllBanner_T(id);
             return da.Object2Json(lst, "Banner", lst.Count);
         }
 
+        [HttpPost]
+        [Route("~/api/Banner")]
+        public string InsertBanner(Banner obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertBanner(obj).ToString();
+        }
     }
 }

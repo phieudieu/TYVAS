@@ -12,7 +12,7 @@ namespace TYVAS_WA.Controllers
        
         [HttpGet]
         [Route("~/api/Sponsor")]
-        public string  GetAllAttenderAndSponsor()
+        public string GetAllSponsor()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Sponsor> lst = da.GetAllSponsor_T();
@@ -21,11 +21,19 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Sponsor/{id}")]
-        public string GetAllAttenderAndSponsor(int id = -1)
+        public string GetSponsorBy(int id = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Sponsor> lst = da.GetAllSponsor_T(id);
             return da.Object2Json(lst, "Sponsor", lst.Count);
+        }
+
+        [HttpPost]
+        [Route("~/api/Sponsor")]
+        public string InsertSponsor(Sponsor obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertSponsor(obj).ToString();
         }
 
     }

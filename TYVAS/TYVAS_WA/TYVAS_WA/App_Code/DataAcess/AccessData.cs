@@ -300,13 +300,15 @@ public class AccessData
     /// <param name="row">Object</param>
     /// <param name="column">Column</param>
     /// <returns>record insert</returns>
-    public bool InsertRow(string table, object row, string[] column = null)
+    public bool InsertRow(string table, object row, string[] column = null,string returnnewid="")
     {
-        string sql = GetInsertSql(table, row, column);
+        string sql = GetInsertSql(table, row, column, returnnewid);
         try
-        {
-            if (ExecuteNonQuery(sql) > 0)
+        { 
+            int result =ExecuteNonQuery(sql);
+            if (result > 0)
             {
+                returnnewid = result.ToString ();
                 return true;
             }
         }
@@ -325,7 +327,7 @@ public class AccessData
     /// <param name="row">Object</param>
     /// <param name="column">Column</param>
     /// <returns>String statement</returns>
-    protected string GetInsertSql(string table, object row, string[] column = null)
+    protected string GetInsertSql(string table, object row, string[] column = null,  string returnnewid="")
     {
         StringBuilder sqltext = new StringBuilder();
         StringBuilder sqltext1 = new StringBuilder();
@@ -335,6 +337,12 @@ public class AccessData
         PropertyInfo p = null;
         int i = 0;
         int sz = 0;
+        string newid = "";
+        if (!returnnewid.Equals(""))
+        {
+            newid = " OUTPUT Inserted." + returnnewid;
+        }
+
         try
         {
             if (row != null)
@@ -387,7 +395,7 @@ public class AccessData
                         }
                         c = ",";
                     }
-                    sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1, sqltext2);
+                    sqltext.AppendFormat("INSERT INTO {0} ({1}) {2} VALUES ({3})", table, sqltext1,newid, sqltext2);
                 }
                 else
                 {
@@ -434,7 +442,7 @@ public class AccessData
                         }
                         c = ",";
                     }
-                    sqltext.AppendFormat("INSERT INTO {0} ({1}) VALUES ({2})", table, sqltext1.ToString(), sqltext2.ToString());
+                    sqltext.AppendFormat("INSERT INTO {0} ({1}) {2} VALUES ({3})", table, sqltext1.ToString(),newid, sqltext2.ToString());
                 }
             }
         }

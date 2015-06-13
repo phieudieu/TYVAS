@@ -12,7 +12,7 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Category")]
-        public string GetAllAttenderAndSponsor()
+        public string GetAllCategory()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Category> lst = da.GetAllCategory_T();
@@ -21,11 +21,19 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Category/{id}")]
-        public string GetAllAttenderAndSponsor(int id = -1)
+        public string GetCategoryBy(int id = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Category> lst = da.GetAllCategory_T(id);
             return da.Object2Json(lst, "Category", lst.Count);
+        }
+
+        [HttpPost]
+        [Route("~/api/Category")]
+        public string InsertCategory(Category obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertCategory(obj).ToString();
         }
 
     }

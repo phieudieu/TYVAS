@@ -11,7 +11,7 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Doccument")]
-        public string  GetAllAttenderAndSponsor()
+        public string GetAllDoccument()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Doccument> lst = da.GetAllDoccument_T();
@@ -20,11 +20,19 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Doccument/{id}")]
-        public string GetAllAttenderAndSponsor(int id = -1)
+        public string GetDoccumentBy(int id = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Doccument> lst = da.GetAllDoccument_T(  id );
             return da.Object2Json(lst, "Doccument", lst.Count);
+        }
+
+        [HttpPost]
+        [Route("~/api/Doccument")]
+        public string InsertDoccument(Doccument obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertDoccument(obj).ToString();
         }
 
     }

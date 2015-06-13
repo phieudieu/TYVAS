@@ -626,10 +626,10 @@ public  class MsSqlDataAccess
 
     #region Insert Entity
 
-    public bool InsertAttender(Attender obj)
+    public bool InsertAttender(Attender obj, string returnnewid = "")
     {
         string[] col = { "FullName", "Email", "Phone", "Address", "Type", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
-        return m_da.InsertRow("Attender", obj, col);
+        return m_da.InsertRow("Attender", obj, col, returnnewid);
     }
 
     public bool InsertSponsor(Sponsor obj)
@@ -676,10 +676,10 @@ public  class MsSqlDataAccess
         string[] col = { "Title", "Description", "Address", "Reference", "StartDate", "EndDate", "Images", "Banner", "Status", "Amount", "FeeJoin", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
         return m_da.InsertRow("Events", obj, col);
     }
-    public bool InsertPosts(Posts obj)
+    public bool InsertPosts(Posts obj, string returnnewid = "")
     {
         string[] col = { "Title", "Keyword", "Content", "ShortContent", "CreatedDate", "CreatedBy", "ViewNbr", "Image", "Actived", "LastModifedDate", "LastModifiedUser", "TopNbr" };
-        return m_da.InsertRow("Posts", obj, col);
+        return m_da.InsertRow("Posts", obj, col, returnnewid);
     }
     public bool InsertSponsorEvent(SponsorEvent obj)
     {
@@ -691,12 +691,12 @@ public  class MsSqlDataAccess
         string[] col = { "Title", "Description", "Author", "CreatedDate", "LastModifedDate", "LastModifiedUser" };
         return m_da.InsertRow("Sharing", obj, col);
     }
-    public bool InsertUser(Users obj)
+    public bool InsertUsers(Users obj)
     {
         string[] col = { "UserID", "FirstName", "LMName", "Sex", "Email", "BirthDay", "UserName", "PassWord", "Image", "CreatedDate", "LastUpdate", "Actived", "Status", "IDReset" };
         return m_da.InsertRow("Users", obj, col);
     }
-    public bool InsertUser(TYASInfo obj)
+    public bool InsertTYASInfo(TYASInfo obj)
     {
         string[] col = { "Name", "Content" };
         return m_da.InsertRow("TYASInfo", obj, col);

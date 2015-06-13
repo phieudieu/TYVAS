@@ -11,7 +11,7 @@ namespace TYVAS_WA.Controllers
     {
         [HttpGet]
         [Route("~/api/Posts")]
-        public string  GetAllAttender()
+        public string GetAllPosts()
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Posts> lst = da.GetAllPosts_T();
@@ -20,11 +20,19 @@ namespace TYVAS_WA.Controllers
 
         [HttpGet]
         [Route("~/api/Posts/{pid}")]
-        public string GetAllAttender(int pid = -1)
+        public string GetPostsBy(int pid = -1)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             List<Posts> lst = da.GetAllPosts_T(pid);
             return da.Object2Json(lst, "Posts", lst.Count);
+        }
+
+        [HttpPost]
+        [Route("~/api/Posts")]
+        public string InsertPosts(Posts obj)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.InsertPosts(obj).ToString();
         }
 
     }
