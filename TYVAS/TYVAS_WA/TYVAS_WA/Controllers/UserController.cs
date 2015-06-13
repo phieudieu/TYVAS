@@ -17,5 +17,16 @@ namespace TYVAS_WA.Controllers
             List<Users> lst = da.GetAllUser_T();
             return da.Object2Json(lst, "Users", lst.Count);
         }
+
+
+        [HttpGet]
+        [Route("~/api/User/{UserID}")]
+        public string GetAllAttender(string UserID = "")
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Users> lst = da.GetAllUser_T(UserID);
+            return da.Object2Json(lst, "Users", lst.Count);
+        }
+
     }
 }

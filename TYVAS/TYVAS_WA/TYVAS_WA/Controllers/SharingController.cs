@@ -18,5 +18,14 @@ namespace TYVAS_WA.Controllers
             return da.Object2Json(lst, "Sharing", lst.Count);
         }
 
+        [HttpGet]
+        [Route("~/api/Sharing/{id}")]
+        public string GetAllAttenderAndSponsor(int id = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Sharing> lst = da.GetAllSharing_T(id);
+            return da.Object2Json(lst, "Sharing", lst.Count);
+        }
+
     }
 }

@@ -17,5 +17,15 @@ namespace TYVAS_WA.Controllers
             List<TYASInfo> lst = da.GetAllTYASInfo_T();
             return da.Object2Json(lst, "TYASInfo", lst.Count);
         }
+
+        [HttpGet]
+        [Route("~/api/TYASInfo/{id}")]
+        public string GetAllAttender(int id = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<TYASInfo> lst = da.GetAllTYASInfo_T(id);
+            return da.Object2Json(lst, "TYASInfo", lst.Count);
+        }
+
     }
 }

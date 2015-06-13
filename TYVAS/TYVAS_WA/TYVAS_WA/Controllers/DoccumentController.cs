@@ -17,5 +17,15 @@ namespace TYVAS_WA.Controllers
             List<Doccument> lst = da.GetAllDoccument_T();
             return da.Object2Json(lst, "Doccument", lst.Count);
         }
+
+        [HttpGet]
+        [Route("~/api/Doccument/{id}")]
+        public string GetAllAttenderAndSponsor(int id = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Doccument> lst = da.GetAllDoccument_T(  id );
+            return da.Object2Json(lst, "Doccument", lst.Count);
+        }
+
     }
 }

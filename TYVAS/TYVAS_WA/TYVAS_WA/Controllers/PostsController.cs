@@ -17,5 +17,15 @@ namespace TYVAS_WA.Controllers
             List<Posts> lst = da.GetAllPosts_T();
             return da.Object2Json(lst, "Posts", lst.Count);
         }
+
+        [HttpGet]
+        [Route("~/api/Posts/{pid}")]
+        public string GetAllAttender(int pid = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Posts> lst = da.GetAllPosts_T(pid);
+            return da.Object2Json(lst, "Posts", lst.Count);
+        }
+
     }
 }

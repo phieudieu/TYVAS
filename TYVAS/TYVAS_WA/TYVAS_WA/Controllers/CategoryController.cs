@@ -18,5 +18,15 @@ namespace TYVAS_WA.Controllers
             List<Category> lst = da.GetAllCategory_T();
             return da.Object2Json(lst, "Category", lst.Count);
         }
+
+        [HttpGet]
+        [Route("~/api/Category/{id}")]
+        public string GetAllAttenderAndSponsor(int id = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Category> lst = da.GetAllCategory_T(id);
+            return da.Object2Json(lst, "Category", lst.Count);
+        }
+
     }
 }

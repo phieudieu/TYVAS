@@ -19,6 +19,15 @@ namespace TYVAS_WA.Controllers
           
         }
 
+        [HttpGet]
+        [Route("~/api/Attender/{id}")]
+        public string GetAllAttender( int id=-1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Attender> lst = da.GetAllAttender_T( id);
+            return da.Object2Json(lst, "Attender", lst.Count);
+
+        }
         
     }
 }

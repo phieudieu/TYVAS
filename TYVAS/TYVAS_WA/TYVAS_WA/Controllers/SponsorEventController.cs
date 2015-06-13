@@ -18,5 +18,14 @@ namespace TYVAS_WA.Controllers
             return da.Object2Json(lst, "SponsorEvent", lst.Count);
         }
 
+        [HttpGet]
+        [Route("~/api/SponsorEvent/{IDSponsor}/{IDEvent}")]
+        public string GetAllAttenderAndSponsor(int IDSponsor = -1, int IDEvent = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<SponsorEvent> lst = da.GetAllSponsorEvent_T(IDSponsor, IDEvent);
+            return da.Object2Json(lst, "SponsorEvent", lst.Count);
+        }
+
     }
 }

@@ -17,5 +17,17 @@ namespace TYVAS_WA.Controllers
             List<Comment> lst = da.GetAllComment_T();
             return da.Object2Json(lst, "Comment", lst.Count);
         }
+
+        [HttpGet]
+        [Route("~/api/Comment/{id}")]
+        public string GetAllAttenderAndSponsor(int id = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Comment> lst = da.GetAllComment_T(id);
+            return da.Object2Json(lst, "Comment", lst.Count);
+        }
+
+
+
     }
 }
