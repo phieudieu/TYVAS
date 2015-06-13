@@ -108,6 +108,21 @@ namespace TYVAS_WA
             sv.LastModifiedUser = "TT";
             da.InsertSponsorEvent(sv);
 
+            Users u = new Users();
+            u.Actived = 1;
+            u.BirthDay = DateTime.Now;
+            u.CreatedDate = DateTime.Now;
+            u.Email = DateTime.Now.ToString("MMddyyyMMhh") + "tyas@gmail.com";
+            u.FirstName = DateTime.Now.ToString("MMddyyy");
+            u.PassWord="password" ;
+            u.LastUpdate = DateTime.Now;
+            u.LMName  = DateTime.Now.ToString("HHmmss");
+            u.Sex = 1;
+            u.Status = 1;
+            u.UserID = DateTime.Now.ToString("ffff");
+            u.UserName = DateTime.Now.ToString("MMddyyffff");
+            u.Image = "/Image.png";
+            da.InsertUser(u);
         }
     }
 }

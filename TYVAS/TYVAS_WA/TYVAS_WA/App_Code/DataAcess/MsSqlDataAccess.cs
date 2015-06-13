@@ -132,10 +132,15 @@ public  class MsSqlDataAccess
 
     #region GetAll Object List
 
-    public List<Sponsor> GetAllSponsor_T()
+    public List<Sponsor> GetAllSponsor_T( int id =-1)
     {
+        string where = "";
+        if (id>-1 )
+        {
+            where = " where id = " + id;
+        }
         List<Sponsor> objList = new List<Sponsor>();
-        string sqltext = "select * from Sponsor";
+        string sqltext = "select * from Sponsor" + where ;
         try
         {
             objList = ConvertData2Object.DataTableToList<Sponsor>(m_da.GetDataTable(sqltext));
@@ -147,10 +152,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Attender> GetAllAttender_T()
+    public List<Attender> GetAllAttender_T(int id = -1)
     {
+        string where = "";
+        if (id > -1)
+        {
+            where = " where id = " + id;
+        }
         List<Attender> objList = new List<Attender>();
-        string sqltext = "select * from attender";
+        string sqltext = "select * from attender" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Attender>(m_da.GetDataTable(sqltext));
@@ -162,10 +172,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<AttenderEvent> GetAllAttenderEvent_T()
+    public List<AttenderEvent> GetAllAttenderEvent_T(int IDAttender = -1, int IDEvent = -1)
     {
+        string where = "";
+        if (IDAttender > -1 && IDEvent > -1)
+        {
+            where = " where IDAttender = " + IDAttender + " and IDEvent = " + IDEvent;
+        }
         List<AttenderEvent> objList = new List<AttenderEvent>();
-        string sqltext = "select * from AttenderEvent";
+        string sqltext = "select * from AttenderEvent" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<AttenderEvent>(m_da.GetDataTable(sqltext));
@@ -177,10 +192,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Banner> GetAllBanner_T()
+    public List<Banner> GetAllBanner_T(int id = -1)
     {
+        string where = "";
+        if (id > -1)
+        {
+            where = " where id = " + id;
+        }
         List<Banner> objList = new List<Banner>();
-        string sqltext = "select * from Banner";
+        string sqltext = "select * from Banner" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Banner>(m_da.GetDataTable(sqltext));
@@ -192,10 +212,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Category> GetAllCategory_T()
+    public List<Category> GetAllCategory_T(int id = -1)
     {
+        string where = "";
+        if (id > -1)
+        {
+            where = " where id = " + id;
+        }
         List<Category> objList = new List<Category>();
-        string sqltext = "select * from Category";
+        string sqltext = "select * from Category" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Category>(m_da.GetDataTable(sqltext));
@@ -207,10 +232,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Comment> GetAllComment_T()
+    public List<Comment> GetAllComment_T(int pid = -1)
     {
+        string where = "";
+        if (pid > -1)
+        {
+            where = " where pid = " + pid;
+        }
         List<Comment> objList = new List<Comment>();
-        string sqltext = "select * from Comment";
+        string sqltext = "select * from Comment" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Comment>(m_da.GetDataTable(sqltext));
@@ -222,10 +252,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Doccument> GetAllDoccument_T()
+    public List<Doccument> GetAllDoccument_T(int id = -1)
     {
+        string where = "";
+        if (id > -1)
+        {
+            where = " where id = " + id;
+        }
         List<Doccument> objList = new List<Doccument>();
-        string sqltext = "select * from Doccument";
+        string sqltext = "select * from Doccument" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Doccument>(m_da.GetDataTable(sqltext));
@@ -237,10 +272,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Events> GetAllEvents_T()
+    public List<Events> GetAllEvents_T(int id = -1)
     {
+        string where = "";
+        if (id > -1)
+        {
+            where = " where id = " + id;
+        }
         List<Events> objList = new List<Events>();
-        string sqltext = "select * from Events";
+        string sqltext = "select * from Events" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Events>(m_da.GetDataTable(sqltext));
@@ -252,10 +292,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Sharing> GetAllSharing_T()
+    public List<Sharing> GetAllSharing_T(int id = -1)
     {
+        string where = "";
+        if (id > -1)
+        {
+            where = " where id = " + id;
+        }
         List<Sharing> objList = new List<Sharing>();
-        string sqltext = "select * from Sharing";
+        string sqltext = "select * from Sharing" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Sharing>(m_da.GetDataTable(sqltext));
@@ -267,10 +312,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<SponsorEvent> GetAllSponsorEvent_T()
+    public List<SponsorEvent> GetAllSponsorEvent_T(int IDSponsor = -1, int IDEvent = -1)
     {
+        string where = "";
+        if (IDSponsor > -1 && IDEvent > -1)
+        {
+            where = " where IDSponsor = " + IDSponsor + " and IDEvent = " + IDEvent;
+        }
         List<SponsorEvent> objList = new List<SponsorEvent>();
-        string sqltext = "select * from SponsorEvent";
+        string sqltext = "select * from SponsorEvent" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<SponsorEvent>(m_da.GetDataTable(sqltext));
@@ -281,11 +331,16 @@ public  class MsSqlDataAccess
         }
         return objList;
     }
-    
-    public List<Posts > GetAllPosts_T()
+
+    public List<Posts> GetAllPosts_T(int pid = -1)
     {
+        string where = "";
+        if (pid > -1)
+        {
+            where = " where pid = " + pid;
+        }
         List<Posts> objList = new List<Posts>();
-        string sqltext = "select * from Posts";
+        string sqltext = "select * from Posts" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Posts>(m_da.GetDataTable(sqltext));
@@ -297,10 +352,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<TYASInfo> GetAllTYASInfo_T()
+    public List<TYASInfo> GetAllTYASInfo_T(int id = -1)
     {
+        string where = "";
+        if (id > -1)
+        {
+            where = " where id = " + id;
+        }
         List<TYASInfo> objList = new List<TYASInfo>();
-        string sqltext = "select * from TYASInfo";
+        string sqltext = "select * from TYASInfo" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<TYASInfo>(m_da.GetDataTable(sqltext));
@@ -312,10 +372,15 @@ public  class MsSqlDataAccess
         return objList;
     }
 
-    public List<Users> GetAllUser_T()
+    public List<Users> GetAllUser_T(string  UserID = "")
     {
+        string where = "";
+        if (!UserID.Equals( "") )
+        {
+            where = " where UserID = " + UserID;
+        }
         List<Users> objList = new List<Users>();
-        string sqltext = "select * from Users";
+        string sqltext = "select * from Users" + where;
         try
         {
             objList = ConvertData2Object.DataTableToList<Users>(m_da.GetDataTable(sqltext));

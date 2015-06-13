@@ -8,7 +8,7 @@ using System.Web;
 /// </summary>
 public class AttenderEvent
 {
-    private string m_IDAttender;
+    private int m_IDAttender;
     private int m_IDEvent;
     private int m_CompletedFee;
     private DateTime m_CreatedDate;
@@ -17,7 +17,7 @@ public class AttenderEvent
     private DateTime m_LastModifiedUser;
     public AttenderEvent()
     {
-        m_IDAttender = String.Empty;
+        m_IDAttender = 0;
         m_IDEvent = 0;
         m_CompletedFee = 0;
         m_CreatedDate = DateTime.MinValue;
@@ -25,7 +25,7 @@ public class AttenderEvent
         m_CreatedUser = DateTime.MinValue;
         m_LastModifiedUser = DateTime.MinValue;
     }
-    public string IDAttender
+    public int IDAttender
     {
         get { return m_IDAttender; }
         set { m_IDAttender = value; }
