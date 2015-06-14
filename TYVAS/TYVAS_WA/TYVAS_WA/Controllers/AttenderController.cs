@@ -31,13 +31,20 @@ namespace TYVAS_WA.Controllers
         }
 
         [HttpPost]
-        [Route("~/api/post/Attender")]
+        [Route("~/api/Attender")]
         public string InsertAttender(Attender obj)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.InsertAttender(obj).ToString();
         }
 
+        [HttpDelete ]
+        [Route("~/api/Attender/{id}")]
+        public string DeleteAttender(int id)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteAttender(id).ToString();
+        }
 
     }
 }

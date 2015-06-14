@@ -35,5 +35,14 @@ namespace TYVAS_WA.Controllers
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.InsertBanner(obj).ToString();
         }
+
+        [HttpDelete ]
+        [Route("~/api/Banner/{id}")]
+        public string DeleteBanner(int id = -1)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteBanner( id).ToString ();
+        }
+
     }
 }

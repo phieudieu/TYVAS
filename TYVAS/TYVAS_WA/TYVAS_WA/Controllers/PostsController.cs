@@ -9,6 +9,7 @@ namespace TYVAS_WA.Controllers
 {
     public class PostsController : ApiController
     {
+
         [HttpGet]
         [Route("~/api/Posts")]
         public string GetAllPosts()
@@ -33,6 +34,14 @@ namespace TYVAS_WA.Controllers
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.InsertPosts(obj).ToString();
+        }
+
+        [HttpDelete ]
+        [Route("~/api/Posts/{pid}")]
+        public string DeletePosts(int pid)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeletePosts(pid).ToString();
         }
 
     }

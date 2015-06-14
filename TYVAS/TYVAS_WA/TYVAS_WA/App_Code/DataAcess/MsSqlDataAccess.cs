@@ -620,10 +620,6 @@ public  class MsSqlDataAccess
 
     #endregion
 
-    #region Get data by
-
-    #endregion
-
     #region Insert Entity
 
     public bool InsertAttender(Attender obj, string returnnewid = "")
@@ -721,7 +717,7 @@ public  class MsSqlDataAccess
     public bool UpdateAttenderEvent(AttenderEvent obj)
     {
         string[] col = { "IDAttender", "IDEvent", "CompletedFee", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
-        string where = string.Format(" IDAttender = '{0}' and  IDEvent= {1}", obj.IDAttender, obj.IDEvent);
+        string where = string.Format(" IDAttender = {0} and  IDEvent= {1}", obj.IDAttender, obj.IDEvent);
         return m_da.UpdateRow("AttenderEvent", obj, col, where);
     }
 
@@ -766,13 +762,13 @@ public  class MsSqlDataAccess
     public bool UpdatePosts(Posts obj)
     {
         string[] col = { "Title", "Keyword", "Content", "ShortContent", "CreatedDate", "CreatedBy", "View", "Image", "Actived", "LastModifedDate", "LastModifiedUser", "Top" };
-        string where = string.Format(" ID = {0}", obj.PID);
+        string where = string.Format(" PID = {0}", obj.PID);
         return m_da.UpdateRow("Posts", obj, col, where);
     }
     public bool UpdateSponsorEvent(SponsorEvent obj)
     {
         string[] col = { "IDSponsor", "IDEvent", "Donate", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
-        string where = string.Format(" IDSponsor = '{0}' and  IDEvent= '{1}'", obj.IDSponsor, obj.IDEvent);
+        string where = string.Format(" IDSponsor = {0} and  IDEvent= {1}", obj.IDSponsor, obj.IDEvent);
         return m_da.UpdateRow("SponsorEvent", obj, col, where);
     }
     public bool UpdateSharing(Sharing obj)
@@ -787,7 +783,7 @@ public  class MsSqlDataAccess
         string where = string.Format(" UserID = '{0}'", obj.UserID);
         return m_da.UpdateRow("Users", obj, col, where);
     }
-    public bool UpdateUser(TYASInfo obj)
+    public bool UpdateTYASInfo(TYASInfo obj)
     {
         string[] col = { "Name", "Content" };
         string where = string.Format(" ID = {0}", obj.ID);
@@ -795,6 +791,92 @@ public  class MsSqlDataAccess
     }
     #endregion
 
-     
+    #region Delete Entity
+
+    public int DeleteAttender(int id  )
+    {
+        string where = string.Format(" ID = {0}",  id);
+        return m_da.DeleteRow("Attender",   where);
+    }
+
+    public int DeleteAttenderEvent(int  IDAttender,int IDEvent)
+    {
+        string where = string.Format(" IDAttender = {0} and  IDEvent= {1}",  IDAttender,  IDEvent);
+        return m_da.DeleteRow("AttenderEvent",   where);
+    }
+
+    public int DeleteBanner(int id)
+    {
+        string where = string.Format(" ID = {0}",id);
+        return m_da.DeleteRow("Banner",   where);
+    }
+
+    public int DeleteCategory(int id)
+    {
+        string where = string.Format(" ID = {0}", id);
+        return m_da.DeleteRow("Category",  where);
+    }
+
+    public int DeleteComment(int pid)
+    {
+        string where = string.Format(" PID = {0}",pid );
+        return m_da.DeleteRow("Comment",   where);
+    }
+
+    public int DeleteDoccument(int id)
+    {
+        string where = string.Format(" ID = {0}",id);
+        return m_da.DeleteRow("Doccument",  where);
+    }
+
+    public int DeleteEventLog(int id)
+    {
+        string where = string.Format(" ID = {0}",id);
+        return m_da.DeleteRow("EventLog",  where);
+    }
+
+    public int DeleteEvents(int id)
+    {
+        string where = string.Format(" ID = {0}",id);
+        return m_da.DeleteRow("Events",   where);
+    }
+
+    public int DeletePosts(int pid)
+    {
+        string where = string.Format(" PID = {0}",pid);
+        return m_da.DeleteRow("Posts",   where);
+    }
+
+    public int DeleteSponsorEvent(int IDSponsor, int IDEvent)
+    {
+        string where = string.Format(" IDSponsor = {0} and  IDEvent= {1}",  IDSponsor,  IDEvent);
+        return m_da.DeleteRow("SponsorEvent",   where);
+    }
+
+    public int DeleteSharing(int id)
+    {
+        string where = string.Format(" ID = {0}", id);
+        return m_da.DeleteRow("Sharing",  where);
+    }
+
+    public int DeleteSponsor(int id)
+    {
+        string where = string.Format(" ID = {0}", id);
+        return m_da.DeleteRow("Sponsor", where);
+    }
+
+    public int DeleteUser(string UserID)
+    {
+        string where = string.Format(" UserID = '{0}'", UserID);
+        return m_da.DeleteRow("Users", where);
+    }
+
+    public int DeleteTYASInfo(int id)
+    {
+        string where = string.Format(" ID = {0}", id);
+        return m_da.DeleteRow("TYASInfo", where);
+    }
+
+    #endregion
 
 }

@@ -35,5 +35,13 @@ namespace TYVAS_WA.Controllers
             return da.InsertSponsorEvent(obj).ToString();
         }
 
+        [HttpPost]
+        [Route("~/api/SponsorEvent/{IDSponsor}/{IDEvent}")]
+        public string  DeleteSponsorEvent(int IDSponsor, int IDEvent)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteSponsorEvent( IDSponsor, IDEvent ).ToString();
+        }
+
     }
 }

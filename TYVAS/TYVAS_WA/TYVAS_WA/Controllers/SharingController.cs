@@ -35,5 +35,14 @@ namespace TYVAS_WA.Controllers
             return da.InsertSharing(obj).ToString();
         }
 
+
+        [HttpDelete ]
+        [Route("~/api/Sharing/{id}")]
+        public string DeleteSharing(int id)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteSharing(id).ToString();
+        }
+
     }
 }

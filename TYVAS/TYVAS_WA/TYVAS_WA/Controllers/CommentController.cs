@@ -35,5 +35,12 @@ namespace TYVAS_WA.Controllers
             return da.InsertComment(obj).ToString();
         }
 
+        [HttpDelete ]
+        [Route("~/api/Comment/{id}")]
+        public string InsertComment(int id)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteComment(id).ToString();
+        }
     }
 }

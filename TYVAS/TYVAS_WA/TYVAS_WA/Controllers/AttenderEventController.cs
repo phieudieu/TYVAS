@@ -36,7 +36,13 @@ namespace TYVAS_WA.Controllers
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.InsertAttenderEvent(obj).ToString ();
         }
-
+        [HttpDelete ]
+        [Route("~/api/AttenderEvent/{IDAttender}/{IDEvent}")]
+        public string DeleteAttenderEvent(int IDAttender, int  IDEvent)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteAttenderEvent(IDAttender, IDEvent).ToString();
+        }
 
     }
 }

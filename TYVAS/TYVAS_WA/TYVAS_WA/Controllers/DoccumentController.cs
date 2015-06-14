@@ -35,5 +35,14 @@ namespace TYVAS_WA.Controllers
             return da.InsertDoccument(obj).ToString();
         }
 
+        [HttpDelete ]
+        [Route("~/api/Doccument/{id}")]
+        public string DeleteDoccument(int id)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteDoccument(id).ToString();
+        }
+
+
     }
 }

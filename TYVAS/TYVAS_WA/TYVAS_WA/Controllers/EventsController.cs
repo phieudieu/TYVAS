@@ -35,5 +35,13 @@ namespace TYVAS_WA.Controllers
             return da.InsertEvents(obj).ToString();
         }
 
+        [HttpDelete ]
+        [Route("~/api/Events/{id}")]
+        public string DeleteEvents(int id)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteEvents(id).ToString();
+        }
+
     }
 }

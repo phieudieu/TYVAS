@@ -30,10 +30,18 @@ namespace TYVAS_WA.Controllers
 
         [HttpPost]
         [Route("~/api/Users")]
-        public string InsertTYASInfo(Users obj)
+        public string InsertUsers(Users obj)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.InsertUsers(obj).ToString();
+        }
+
+        [HttpDelete ]
+        [Route("~/api/Users/{UserID}")]
+        public string DeleteUser(string UserID)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.DeleteUser(UserID).ToString();
         }
 
     }
