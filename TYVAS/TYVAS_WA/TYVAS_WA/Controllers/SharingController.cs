@@ -34,14 +34,21 @@ namespace TYVAS_WA.Controllers
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.InsertSharing(obj).ToString();
         }
-
-
+        
         [HttpDelete ]
         [Route("~/api/Sharing/{id}")]
         public string DeleteSharing(int id)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.DeleteSharing(id).ToString();
+        }
+
+        [HttpPut]
+        [Route("~/api/Sharing/{arraycolumn}")]
+        public string UpdateSharing(Sharing obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateSharing(obj,arraycolumn ).ToString();
         }
 
     }

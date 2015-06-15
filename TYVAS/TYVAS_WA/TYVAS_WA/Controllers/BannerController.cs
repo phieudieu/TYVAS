@@ -44,5 +44,14 @@ namespace TYVAS_WA.Controllers
             return da.DeleteBanner( id).ToString ();
         }
 
+        [HttpPut]
+        [Route("~/api/Banner/{arraycolumn}")]
+        public string UpdateBanner(Banner obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateBanner(obj, arraycolumn ).ToString();
+        }
+
+
     }
 }

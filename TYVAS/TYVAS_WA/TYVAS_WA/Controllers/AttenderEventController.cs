@@ -44,5 +44,14 @@ namespace TYVAS_WA.Controllers
             return da.DeleteAttenderEvent(IDAttender, IDEvent).ToString();
         }
 
+        [HttpPut ]
+        [Route("~/api/AttenderEvent/{arraycolumn}")]
+        public string UpdateAttenderEvent(AttenderEvent obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateAttenderEvent(obj,arraycolumn ).ToString();
+        }
+
     }
+
 }

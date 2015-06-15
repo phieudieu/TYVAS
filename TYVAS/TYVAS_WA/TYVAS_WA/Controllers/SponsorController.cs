@@ -44,5 +44,13 @@ namespace TYVAS_WA.Controllers
             return da.DeleteSponsor(id).ToString();
         }
 
+        [HttpPut]
+        [Route("~/api/Sponsor/{arraycolumn}")]
+        public string UpdateSponsor(Sponsor obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateSponsor(obj,arraycolumn ).ToString();
+        }
+
     }
 }

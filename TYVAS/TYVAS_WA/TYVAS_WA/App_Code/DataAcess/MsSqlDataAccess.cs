@@ -879,4 +879,97 @@ public  class MsSqlDataAccess
 
     #endregion
 
+
+    #region Update /{arraycolumn} ,string[] arraycolumn
+
+    public bool UpdateAttender(Attender obj, string[] col)
+    {
+       
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("Attender", obj, col, where);
+    }
+
+    public bool UpdateSponsor(Sponsor obj, string[] col)
+    {
+       
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("Sponsor", obj, col, where);
+    }
+
+    public bool UpdateAttenderEvent(AttenderEvent obj, string[] col)
+    {
+       
+        string where = string.Format(" IDAttender = {0} and  IDEvent= {1}", obj.IDAttender, obj.IDEvent);
+        return m_da.UpdateRow("AttenderEvent", obj, col, where);
+    }
+
+    public bool UpdateBanner(Banner obj, string[] col)
+    {
+        
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("Banner", obj, col, where);
+    }
+
+    public bool UpdateCategory(Category obj, string[] col)
+    {
+         
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("Category", obj, col, where);
+    }
+
+    public bool UpdateComment(Comment obj, string[] col)
+    {
+        
+        string where = string.Format(" PID = {0}", obj.PID);
+        return m_da.UpdateRow("Comment", obj, col, where);
+    }
+    public bool UpdateDoccument(Doccument obj, string[] col)
+    {
+         
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("Doccument", obj, col, where);
+    }
+    public bool UpdateEventLog(EventLog obj, string[] col)
+    {
+         
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("EventLog", obj, col, where);
+    }
+    public bool UpdateEvents(Events obj, string[] col)
+    {
+         
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("Events", obj, col, where);
+    }
+    public bool UpdatePosts(Posts obj, string[] col)
+    {
+        
+        string where = string.Format(" PID = {0}", obj.PID);
+        return m_da.UpdateRow("Posts", obj, col, where);
+    }
+    public bool UpdateSponsorEvent(SponsorEvent obj, string[] col)
+    {
+       
+        string where = string.Format(" IDSponsor = {0} and  IDEvent= {1}", obj.IDSponsor, obj.IDEvent);
+        return m_da.UpdateRow("SponsorEvent", obj, col, where);
+    }
+    public bool UpdateSharing(Sharing obj, string[] col)
+    {
+        
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("Sharing", obj, col, where);
+    }
+    public bool UpdateUsers(Users obj, string[] col)
+    {
+         
+        string where = string.Format(" UserID = '{0}'", obj.UserID);
+        return m_da.UpdateRow("Users", obj, col, where);
+    }
+    public bool UpdateTYASInfo(TYASInfo obj, string[] col)
+    {
+         
+        string where = string.Format(" ID = {0}", obj.ID);
+        return m_da.UpdateRow("TYASInfo", obj, col, where);
+    }
+    #endregion
 }

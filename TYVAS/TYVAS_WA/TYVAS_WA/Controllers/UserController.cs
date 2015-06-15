@@ -44,5 +44,14 @@ namespace TYVAS_WA.Controllers
             return da.DeleteUser(UserID).ToString();
         }
 
+        [HttpPut]
+        [Route("~/api/Users/{arraycolumn}")]
+        public string UpdateUsers(Users obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateUsers(obj,arraycolumn ).ToString();
+        }
+
+
     }
 }

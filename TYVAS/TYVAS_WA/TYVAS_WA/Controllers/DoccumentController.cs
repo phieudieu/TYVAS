@@ -43,6 +43,14 @@ namespace TYVAS_WA.Controllers
             return da.DeleteDoccument(id).ToString();
         }
 
+        [HttpPut]
+        [Route("~/api/Doccument/{arraycolumn}")]
+        public string UpdateDoccument(Doccument obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateDoccument(obj, arraycolumn).ToString();
+        }
+
 
     }
 }

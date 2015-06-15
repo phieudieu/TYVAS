@@ -42,5 +42,14 @@ namespace TYVAS_WA.Controllers
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.DeleteCategory(id).ToString();
         }
+
+        [HttpPut]
+        [Route("~/api/Category/{arraycolumn}")]
+        public string InsertCategory(Category obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateCategory(obj, arraycolumn ).ToString();
+        }
+
     }
 }

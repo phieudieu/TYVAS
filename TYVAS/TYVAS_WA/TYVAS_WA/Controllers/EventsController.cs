@@ -43,5 +43,13 @@ namespace TYVAS_WA.Controllers
             return da.DeleteEvents(id).ToString();
         }
 
+        [HttpPost]
+        [Route("~/api/Events/{arraycolumn}")]
+        public string UpdateEvents(Events obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateEvents(obj, arraycolumn).ToString();
+        }
+
     }
 }

@@ -9,6 +9,7 @@ namespace TYVAS_WA.Controllers
 {
     public class CommentController : ApiController
     {
+
         [HttpGet]
         [Route("~/api/Comment")]
         public string GetComment()
@@ -42,5 +43,16 @@ namespace TYVAS_WA.Controllers
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.DeleteComment(id).ToString();
         }
+
+        [HttpPut]
+        [Route("~/api/Comment/{arraycolumn}")]
+        public string UpdateComment(Comment obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateComment(obj, arraycolumn).ToString();
+        }
+
+
+
     }
 }

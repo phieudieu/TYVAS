@@ -43,5 +43,13 @@ namespace TYVAS_WA.Controllers
             return da.DeleteTYASInfo(id).ToString();
         }
 
+        [HttpPut]
+        [Route("~/api/TYASInfo/{arraycolumn}")]
+        public string UpdateTYASInfo(TYASInfo obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdateTYASInfo(obj,arraycolumn ).ToString();
+        }
+
     }
 }

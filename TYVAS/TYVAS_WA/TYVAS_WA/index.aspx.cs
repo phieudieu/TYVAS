@@ -120,7 +120,7 @@ namespace TYVAS_WA
             u.LMName  = DateTime.Now.ToString("HHmmss");
             u.Sex = 1;
             u.Status = 1;
-            u.UserID = DateTime.Now.ToString("ffff");
+            u.UserID = DateTime.Now.ToString("HHmmffff");
             u.UserName = DateTime.Now.ToString("MMddyyffff");
             u.Image = "/Image.png";
             da.InsertUsers(u);

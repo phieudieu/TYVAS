@@ -44,5 +44,13 @@ namespace TYVAS_WA.Controllers
             return da.DeletePosts(pid).ToString();
         }
 
+        [HttpPut]
+        [Route("~/api/Posts/{arraycolumn}")]
+        public string UpdatePosts(Posts obj, string[] arraycolumn)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            return da.UpdatePosts(obj,arraycolumn ).ToString();
+        }
+
     }
 }
