@@ -27,6 +27,15 @@ namespace TYVAS_WA.Controllers
             return da.Object2Json(lst, "Events", lst.Count);
         }
 
+        [HttpGet]
+        [Route("~/api/Paging/Events/{PageNumber}/{RowspPage}")]
+        public string GetAllEventsPaging(int PageNumber, int RowspPage)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Events> lst = da.GetAllEventsPaging_T(PageNumber, RowspPage);
+            return da.Object2Json(lst, "Events", lst.Count, da.CountDataFromTable("Events"));
+        }
+
         [HttpPost]
         [Route("~/api/Events")]
         public string InsertEvents(Events obj)

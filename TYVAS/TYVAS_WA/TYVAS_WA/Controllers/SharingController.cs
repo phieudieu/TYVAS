@@ -27,6 +27,15 @@ namespace TYVAS_WA.Controllers
             return da.Object2Json(lst, "Sharing", lst.Count);
         }
 
+        [HttpGet]
+        [Route("~/api/Paging/Sharing/{PageNumber}/{RowspPage}")]
+        public string GetAllSharingPaging(int PageNumber, int RowspPage)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Sharing> lst = da.GetAllSharingPaging_T(PageNumber, RowspPage);
+            return da.Object2Json(lst, "Sharing", lst.Count, da.CountDataFromTable("Sharing"));
+        }
+
         [HttpPost]
         [Route("~/api/Sharing")]
         public string InsertSharing(Sharing obj)

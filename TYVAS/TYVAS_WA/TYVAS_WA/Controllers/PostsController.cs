@@ -28,6 +28,15 @@ namespace TYVAS_WA.Controllers
             return da.Object2Json(lst, "Posts", lst.Count);
         }
 
+        [HttpGet]
+        [Route("~/api/Paging/Posts/{PageNumber}/{RowspPage}")]
+        public string GetAllPostsPaging(int PageNumber, int RowspPage)
+        {
+            MsSqlDataAccess da = new MsSqlDataAccess();
+            List<Posts> lst = da.GetAllPostsPaging_T (PageNumber, RowspPage);
+            return da.Object2Json(lst, "Posts", lst.Count, da.CountDataFromTable("Posts"));
+        }
+
         [HttpPost]
         [Route("~/api/Posts")]
         public string InsertPosts(Posts obj)

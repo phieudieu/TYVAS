@@ -104,6 +104,29 @@ public class AccessData
         return dt;
     }
 
+    public DataTable GetDataPaging(string table, string fieldorderby, int PageNumber, int RowspPage)
+    {
+        string sqltext = " DECLARE @PageNumber AS INT, @RowspPage AS INT ";
+        sqltext = sqltext + " SET @PageNumber = " + PageNumber ;
+        sqltext = sqltext + " SET @RowspPage = " + RowspPage;
+        sqltext = sqltext + string.Format(" SELECT * FROM ( SELECT ROW_NUMBER() OVER(ORDER BY {0}) AS NUMBER, * FROM {1}) AS TBL", fieldorderby, table );
+        sqltext = sqltext + " WHERE NUMBER BETWEEN ((@PageNumber - 1) * @RowspPage + 1) AND (@PageNumber * @RowspPage)";
+        sqltext = sqltext + " ORDER BY " + fieldorderby ;
+        return GetDataTable(sqltext);
+    }
+
+   
+    public DataTable GetDataPagingForSQL2012(string table, string fieldorderby, int PageNumber, int RowspPage)
+    {
+        string sqltext = " DECLARE @PageNumber AS INT, @RowspPage AS INT ";
+        sqltext = sqltext + " SET @PageNumber =  " + PageNumber;
+        sqltext = sqltext + " SET @RowspPage = " + RowspPage;
+        sqltext = sqltext + string.Format(" SELECT * FROM {0} ORDER BY {1}",table, fieldorderby  );
+        sqltext = sqltext + " OFFSET ((@PageNumber - 1) * @RowspPage) ROWS";
+        sqltext = sqltext + " FETCH NEXT @RowspPage ROWS ONLY"  ;
+        return GetDataTable(sqltext);
+    }
+
     /// <summary>
     /// Get data
     /// </summary>
@@ -616,4 +639,7 @@ public class AccessData
         string sql = string.Format("Delete {0} ", table);
         return ExecuteNonQuery(sql);
     }
+
+
+
 }

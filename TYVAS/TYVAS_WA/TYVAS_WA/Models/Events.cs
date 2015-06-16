@@ -24,25 +24,28 @@ public class Events
     private DateTime m_LastModifedDate;
     private string m_CreatedUser;
     private string m_LastModifiedUser;
+    private int m_NUMBER;
+
     public Events()
-{
-m_ID = 0;
-m_Title = String.Empty;
-m_Description = String.Empty;
-m_Address = String.Empty;
-m_Reference = String.Empty;
-m_StartDate = DateTime.MinValue;
-m_EndDate = DateTime.MinValue;
-m_Images = String.Empty;
-m_Banner = String.Empty;
-m_Status = 0;
-m_Amount = 0;
-m_FeeJoin = 0;
-m_CreatedDate = DateTime.MinValue;
-m_LastModifedDate = DateTime.MinValue;
-m_CreatedUser = String.Empty;
-m_LastModifiedUser = String.Empty;
-}
+    {
+        m_ID = 0;
+        m_Title = String.Empty;
+        m_Description = String.Empty;
+        m_Address = String.Empty;
+        m_Reference = String.Empty;
+        m_StartDate = DateTime.MinValue;
+        m_EndDate = DateTime.MinValue;
+        m_Images = String.Empty;
+        m_Banner = String.Empty;
+        m_Status = 0;
+        m_Amount = 0;
+        m_FeeJoin = 0;
+        m_CreatedDate = DateTime.MinValue;
+        m_LastModifedDate = DateTime.MinValue;
+        m_CreatedUser = String.Empty;
+        m_LastModifiedUser = String.Empty;
+        m_NUMBER = 0;
+    }
     public int ID
     {
         get { return m_ID; }
@@ -123,5 +126,9 @@ m_LastModifiedUser = String.Empty;
         get { return m_LastModifiedUser; }
         set { m_LastModifiedUser = value; }
     }
-
+    public int NUMBER
+    {
+        get { return m_NUMBER ; }
+        set { m_NUMBER = value; }
+    }
 }

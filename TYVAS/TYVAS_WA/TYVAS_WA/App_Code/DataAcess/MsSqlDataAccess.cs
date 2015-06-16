@@ -80,7 +80,7 @@ public  class MsSqlDataAccess
 
     #region Json utils
 
-    public string Object2Json(object obj, string objectname, int itemcount)
+    public string Object2Json(object obj, string objectname, int itemcount, int totalItemCount=-1)
     {
         string json = "";
         Dictionary<string, object> dic = new Dictionary<string, object>();
@@ -89,6 +89,10 @@ public  class MsSqlDataAccess
         {
             dic.Add(objectname, obj);
             dic.Add("ItemCount", itemcount.ToString());
+            if (totalItemCount > -1)
+            {
+                dic.Add("TotalItemCount", totalItemCount.ToString());
+            }          
             json = serializer.Serialize(dic);
         }
         catch (Exception ex)
@@ -126,6 +130,67 @@ public  class MsSqlDataAccess
             json = ex.ToString();
         }
         return json;
+    }
+
+    #endregion
+
+    #region Paging
+
+    public List<Events> GetAllEventsPaging_T(int PageNumber, int RowspPage)
+    {
+        List<Events> objList = new List<Events>();       
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Events>(m_da.GetDataPaging("Events", "ID", PageNumber, RowspPage));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Posts> GetAllPostsPaging_T(int PageNumber, int RowspPage)
+    {       
+        List<Posts> objList = new List<Posts>();        
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Posts>(m_da.GetDataPaging("Posts", "PID", PageNumber, RowspPage));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public List<Sharing> GetAllSharingPaging_T(int PageNumber, int RowspPage)
+    {       
+        List<Sharing> objList = new List<Sharing>();       
+        try
+        {
+            objList = ConvertData2Object.DataTableToList<Sharing>(m_da.GetDataPaging("Sharing", "ID", PageNumber, RowspPage));
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return objList;
+    }
+
+    public int CountDataFromTable(string table)
+    {
+        string sqltext = string.Format("select count (*) from {0}", table);
+        int resutl = 0;
+        try
+        {
+            resutl = int.Parse(m_da.ExecuteScalar(sqltext).ToString());
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return resutl;
     }
 
     #endregion
@@ -707,6 +772,7 @@ public  class MsSqlDataAccess
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Attender", obj, col, where);
     }
+
     public bool UpdateAttenderAndSponsor(Sponsor obj)
     {
         string[] col = { "FullName", "Email", "Phone", "Address", "Type", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
@@ -741,54 +807,63 @@ public  class MsSqlDataAccess
         string where = string.Format(" PID = {0}", obj.PID);
         return m_da.UpdateRow("Comment", obj, col, where);
     }
+
     public bool UpdateDoccument(Doccument obj)
     {
         string[] col = { "Title", "Document", "Path" };
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Doccument", obj, col, where);
     }
+
     public bool UpdateEventLog(EventLog obj)
     {
         string[] col = { "Category", "UserID", "DateTimeStamp", "FromData", "ToData" };
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("EventLog", obj, col, where);
     }
+
     public bool UpdateEvents(Events obj)
     {
         string[] col = { "Title", "Description", "Address", "Reference", "StartDate", "EndDate", "Images", "Banner", "Status", "Amount", "FeeJoin", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Events", obj, col, where);
     }
+
     public bool UpdatePosts(Posts obj)
     {
         string[] col = { "Title", "Keyword", "Content", "ShortContent", "CreatedDate", "CreatedBy", "View", "Image", "Actived", "LastModifedDate", "LastModifiedUser", "Top" };
         string where = string.Format(" PID = {0}", obj.PID);
         return m_da.UpdateRow("Posts", obj, col, where);
     }
+
     public bool UpdateSponsorEvent(SponsorEvent obj)
     {
         string[] col = { "IDSponsor", "IDEvent", "Donate", "CreatedDate", "LastModifedDate", "CreatedUser", "LastModifiedUser" };
         string where = string.Format(" IDSponsor = {0} and  IDEvent= {1}", obj.IDSponsor, obj.IDEvent);
         return m_da.UpdateRow("SponsorEvent", obj, col, where);
     }
+
     public bool UpdateSharing(Sharing obj)
     {
         string[] col = { "Title", "Description", "Author", "CreatedDate", "LastModifedDate", "LastModifiedUser" };
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Sharing", obj, col, where);
     }
+
     public bool UpdateUser(Users obj)
     {
         string[] col = { "UserID", "FirstName", "LMName", "Sex", "Email", "BirthDay", "UserName", "PassWord", "Image", "CreatedDate", "LastUpdate", "Actived", "Status", "IDReset" };
         string where = string.Format(" UserID = '{0}'", obj.UserID);
         return m_da.UpdateRow("Users", obj, col, where);
     }
+
     public bool UpdateTYASInfo(TYASInfo obj)
     {
         string[] col = { "Name", "Content" };
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("TYASInfo", obj, col, where);
     }
+
     #endregion
 
     #region Delete Entity
@@ -878,8 +953,7 @@ public  class MsSqlDataAccess
     }
 
     #endregion
-
-
+    
     #region Update /{arraycolumn} ,string[] arraycolumn
 
     public bool UpdateAttender(Attender obj, string[] col)
@@ -923,53 +997,62 @@ public  class MsSqlDataAccess
         string where = string.Format(" PID = {0}", obj.PID);
         return m_da.UpdateRow("Comment", obj, col, where);
     }
+
     public bool UpdateDoccument(Doccument obj, string[] col)
     {
          
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Doccument", obj, col, where);
     }
+
     public bool UpdateEventLog(EventLog obj, string[] col)
     {
          
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("EventLog", obj, col, where);
     }
+
     public bool UpdateEvents(Events obj, string[] col)
     {
          
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Events", obj, col, where);
     }
+
     public bool UpdatePosts(Posts obj, string[] col)
     {
         
         string where = string.Format(" PID = {0}", obj.PID);
         return m_da.UpdateRow("Posts", obj, col, where);
     }
+
     public bool UpdateSponsorEvent(SponsorEvent obj, string[] col)
     {
        
         string where = string.Format(" IDSponsor = {0} and  IDEvent= {1}", obj.IDSponsor, obj.IDEvent);
         return m_da.UpdateRow("SponsorEvent", obj, col, where);
     }
+
     public bool UpdateSharing(Sharing obj, string[] col)
     {
         
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("Sharing", obj, col, where);
     }
+
     public bool UpdateUsers(Users obj, string[] col)
     {
          
         string where = string.Format(" UserID = '{0}'", obj.UserID);
         return m_da.UpdateRow("Users", obj, col, where);
     }
+
     public bool UpdateTYASInfo(TYASInfo obj, string[] col)
     {
          
         string where = string.Format(" ID = {0}", obj.ID);
         return m_da.UpdateRow("TYASInfo", obj, col, where);
     }
+
     #endregion
 }
