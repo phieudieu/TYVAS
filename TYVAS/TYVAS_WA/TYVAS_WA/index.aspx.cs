@@ -88,6 +88,20 @@ namespace TYVAS_WA
             ev.StartDate = DateTime.Now;
             ev.Title = "Title";
             ev.Status = 1;
+
+            List<Reference> lstre = new List<Reference>();
+            Reference re = new Reference();
+            re.Address = "Add1";
+            re.Name = "Name1";
+            re.Phone = "9999999999";
+            lstre.Add(re);
+            re = new Reference();
+            re.Address = "Add2";
+            re.Name = "Name2";
+            re.Phone = "8888888888";
+           lstre.Add(re);
+           ev.Referercer = lstre;
+            ev.SetReferercer();
             da.InsertEvents(ev);
 
             Sharing sh = new Sharing();

@@ -25,6 +25,7 @@ public class Events
     private string m_CreatedUser;
     private string m_LastModifiedUser;
     private int m_NUMBER;
+    private List<Reference> m_Referercer;
 
     public Events()
     {
@@ -44,6 +45,7 @@ public class Events
         m_LastModifedDate = DateTime.MinValue;
         m_CreatedUser = String.Empty;
         m_LastModifiedUser = String.Empty;
+        m_Referercer = new List<Reference>();
         m_NUMBER = 0;
     }
     public int ID
@@ -131,4 +133,52 @@ public class Events
         get { return m_NUMBER ; }
         set { m_NUMBER = value; }
     }
+    public List<Reference> Referercer
+    {
+        get {
+             List<Reference> re= new List<global::Reference>() ;
+            string []arr = m_Reference.Split(new string[] { "[!!]" }, StringSplitOptions.None );
+            foreach (string item in arr)
+            {
+                if (!item.Equals(""))
+                {
+                    string[] arr1 = item.Split(new string[] { "[!]" }, StringSplitOptions.None);
+                    if (arr1.Length > 0)
+                    {
+                        Reference itemre = new Reference();
+                        itemre.Name = arr1[0];
+                        if (arr1.Length > 1)
+                        {
+                            itemre.Address = arr1[1];
+                        }
+                        if (arr1.Length > 2)
+                        {
+                            itemre.Phone = arr1[2];
+                        }
+                        re.Add(itemre);
+                    }
+                }               
+            }
+
+            return re; 
+        } 
+        set { m_Referercer = value; }
+    }
+
+    public void SetReferercer()
+    {
+        Reference="";
+        foreach (Reference item in m_Referercer)
+        {
+            if (Reference.Equals(""))
+            {
+                Reference = item.Name + "[!]" + item.Address + "[!]" + item.Phone;
+            }
+            else
+            {
+                Reference = Reference + "[!!]" + item.Name + "[!]" + item.Address + "[!]" + item.Phone;
+            }
+        }
+    }
+
 }

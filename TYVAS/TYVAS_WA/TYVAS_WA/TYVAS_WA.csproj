@@ -127,7 +127,9 @@
     <Content Include="js\directives\lnsUsersAdmin.js" />
     <Content Include="js\domReady.js" />
     <Content Include="js\main.js" />
+    <Content Include="js\pages\AboutPage.js" />
     <Content Include="js\pages\AdminPage.js" />
+    <Content Include="js\pages\ContactPage.js" />
     <Content Include="js\pages\EventDetailPage.js" />
     <Content Include="js\pages\EventsPage.js" />
     <Content Include="js\pages\HomePage.js" />
@@ -226,6 +228,7 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Attender.cs" />
+    <Compile Include="Models\Reference.cs" />
     <Compile Include="Models\Sponsor.cs" />
     <Compile Include="Models\AttenderEvent.cs" />
     <Compile Include="Models\Banner.cs" />
