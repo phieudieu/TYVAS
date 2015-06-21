@@ -1,5 +1,7 @@
 ﻿'use strict';
-define(['js/common/directive'], function (app) {
+define(['js/common/directive',
+    'js/controllers/addNewEventCtrl'
+], function (app) {
     app.directive('lnsAddNewEvent', ['$timeout', function ($timeout) {
         return {
             scope: {

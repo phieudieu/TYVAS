@@ -4,6 +4,18 @@ define([
     'js/common/controller'
 ], function(app){
     app.controller('eventsCtrl',['$scope', '$http',function($scope, $http) {
-       $scope.listEvents = [1,2,3,4,5,6,7,8,9,10];
+        $scope.listEvents = [];
+        $scope.limit = 20;
+        $scope.offset = 0;
+        $scope.url = "/api/Events";
+        $scope.totalItems = 0;
+        loadEvents();
+        function loadEvents() {
+            $http.get($scope.url).success(function (data) {
+                var rs = JSON.parse(data);
+                $scope.totalItems = parseInt(rs.ItemCount);
+                $scope.listEvents = rs.Events;
+            })
+        };
     }]);
 })

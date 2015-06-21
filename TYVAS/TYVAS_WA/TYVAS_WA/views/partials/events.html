@@ -20,7 +20,7 @@
     </div>
     <div class="block-body">
         <div class="items-event">
-            <div class="media item-event" ng-repeat="i in listEvents">
+            <div class="media item-event" ng-repeat="i in listEvents | limitTo:10">
                 <div class="media-left">
                     <a class="item-thumbnail" href="eventdetail/456777">
                         <img class="media-object img-responsive" src="http://lorempixel.com/400/200/?{{i}}" alt="...">

@@ -2,8 +2,16 @@
 @orange-color : #EF4F00;
 @gray-color :  #e4e3e3;
 @gray-color-lower: #f5f5f5;
+@dack-blue :#0B1962;
 body  {
   background: #D2D2D2;
+}
+a {
+  color:@orange-color;
+  text-decoration:none;
+}
+a:hover, a:focus {
+  text-decoration:none;
 }
 @font-face {
   font-family: 'BebasNeueRegular';
@@ -17,6 +25,9 @@ body  {
 }
 .orange-color {
   color: @orange-color;
+}
+.blue-color {
+  color: @dack-blue;
 }
 .font-bold {
   font-weight: 600;
@@ -97,20 +108,28 @@ body  {
   }
 }
 .menu-top {
+  margin-bottom: 15px;
   ul {
-    list-style: none;
     margin: 0px;
     padding: 0;
+    background: @dack-blue;
+    font-size: 0px;
     li {
+      list-style: none;
       display: inline-block;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 10px;
+      border-right: 1px solid rgba(168, 161, 157, 0.36);
       a{
-        padding: 0px 20px;
-        height: 50px;
-        line-height: 50px;
-        text-underline: none;
-        display: block;
-        border-left: 1px solid #dddddd;
-        background: @gray-color;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+    li:hover, li:focus {
+      background: #EF4F00;
+      a{
+        color: @dack-blue;
       }
     }
   }
@@ -209,4 +228,7 @@ body  {
     background-color: @gray-color-lower;
     padding: 10px;
   }
+}
+.gg {
+  color: #265a88;
 }
