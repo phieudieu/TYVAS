@@ -80,25 +80,23 @@
     <Content Include="css\lnsStyle.css" />
     <Content Include="domReady.js" />
     <Content Include="Global.asax" />
-    <Content Include="images\accent.png" />
-    <Content Include="images\bullet.png" />
-    <Content Include="images\heroAccent.png" />
-    <Content Include="images\image\MAVT\CYMERA_20140316_094537.jpg" />
-    <Content Include="images\image\MAVT\IMG_20140315_173358.jpg" />
-    <Content Include="images\image\MAVT\IMG_20140315_175020.jpg" />
-    <Content Include="images\IMG_20140315_173356.jpg" />
-    <Content Include="images\IMTYVAS\tyas.jpg" />
-    <Content Include="images\orderedList0.png" />
-    <Content Include="images\orderedList1.png" />
-    <Content Include="images\orderedList2.png" />
-    <Content Include="images\orderedList3.png" />
-    <Content Include="images\orderedList4.png" />
-    <Content Include="images\orderedList5.png" />
-    <Content Include="images\orderedList6.png" />
-    <Content Include="images\orderedList7.png" />
-    <Content Include="images\orderedList8.png" />
-    <Content Include="images\orderedList9.png" />
-    <Content Include="images\Page\Logo.png" />
+    <Content Include="js\controllers\addNewEventCtrl.js" />
+    <Content Include="js\directives\lnsAbout.js" />
+    <Content Include="js\directives\lnsContact.js" />
+    <Content Include="TYAS_IMAGES\accent.png" />
+    <Content Include="TYAS_IMAGES\bullet.png" />
+    <Content Include="TYAS_IMAGES\heroAccent.png" />
+    <Content Include="TYAS_IMAGES\orderedList0.png" />
+    <Content Include="TYAS_IMAGES\orderedList1.png" />
+    <Content Include="TYAS_IMAGES\orderedList2.png" />
+    <Content Include="TYAS_IMAGES\orderedList3.png" />
+    <Content Include="TYAS_IMAGES\orderedList4.png" />
+    <Content Include="TYAS_IMAGES\orderedList5.png" />
+    <Content Include="TYAS_IMAGES\orderedList6.png" />
+    <Content Include="TYAS_IMAGES\orderedList7.png" />
+    <Content Include="TYAS_IMAGES\orderedList8.png" />
+    <Content Include="TYAS_IMAGES\orderedList9.png" />
+    <Content Include="TYAS_IMAGES\Page\Logo.png" />
     <Content Include="index.aspx" />
     <Content Include="index.html" />
     <Content Include="js\app.js" />
@@ -216,6 +214,7 @@
     <Compile Include="Controllers\SharingController.cs" />
     <Compile Include="Controllers\SponsorEventController.cs" />
     <Compile Include="Controllers\TYASInfoController.cs" />
+    <Compile Include="Controllers\UpLoadImageController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -228,6 +227,7 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Attender.cs" />
+    <Compile Include="Models\Images.cs" />
     <Compile Include="Models\Reference.cs" />
     <Compile Include="Models\Sponsor.cs" />
     <Compile Include="Models\AttenderEvent.cs" />
@@ -305,7 +305,6 @@
     <Content Include="lib\ocLazyLoad\ocLazyLoad.min.js.map" />
     <Content Include="lib\ocLazyLoad\ocLazyLoad.require.js.map" />
     <Content Include="lib\ocLazyLoad\ocLazyLoad.require.min.js.map" />
-    <Content Include="Log\TYAS.log" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -316,7 +315,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="font\" />
-    <Folder Include="images\file\" />
+    <Folder Include="Log\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

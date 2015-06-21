@@ -36,9 +36,20 @@ namespace TYVAS_WA.Controllers
             return da.Object2Json(lst, "Events", lst.Count, da.CountDataFromTable("Events"));
         }
 
+        //[HttpPost]
+        //[Route("~/api/Events")]
+        //public HttpResponseMessage InsertEvents()
+        //{
+        //    HttpContent requestContent = Request.Content;
+        //    Events evt = null;
+        //    string jsonContent = requestContent.ReadAsStringAsync().Result;
+        //    evt= ConvertData2Object.Json2Object<Events>(jsonContent);
+        //    return null;
+        //}
+
         [HttpPost]
         [Route("~/api/Events")]
-        public string InsertEvents(Events obj)
+        public string InsertEvents([FromBody]Events obj)
         {
             MsSqlDataAccess da = new MsSqlDataAccess();
             return da.InsertEvents(obj).ToString();

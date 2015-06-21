@@ -63,6 +63,25 @@ public static class ConvertData2Object
         }
         return result;
     }
+
+    public  static T Json2Object<T>(string json) where T : new()
+    {
+        log4net.ILog m_logger = log4net.LogManager.GetLogger(typeof(MsSqlDataAccess));
+        T item = new T();
+        Dictionary<string, object> dic = new Dictionary<string, object>();
+        try
+        {
+            JavaScriptSerializer json_serializer = new JavaScriptSerializer();
+            dic = (Dictionary<string, object>)json_serializer.DeserializeObject(json);
+        }
+        catch (Exception ex)
+        {
+            m_logger.Error(ex.ToString());
+        }
+        return item;
+    }
+
+
 }
 
 /// <summary>
@@ -102,6 +121,13 @@ public  class MsSqlDataAccess
         }
         return json;
     }
+
+
+    //public void Json2Object( T obj, string json)
+    //{
+    //    JavaScriptSerializer json_serializer = new JavaScriptSerializer();
+    //    obj = (object)json_serializer.DeserializeObject(json);
+    //}
 
     public void AddObject2Dictionary(ref Dictionary<string, object> dic, object ojb, string objname, int itemcount)
     {

@@ -27,6 +27,11 @@ public class Events
     private int m_NUMBER;
     private List<Reference> m_Referercer;
 
+    private string m_SStartDate;
+    private string m_SEndDate;
+    private string m_SCreatedDate;
+    private string m_SLastModifedDate;
+
     public Events()
     {
         m_ID = 0;
@@ -47,6 +52,10 @@ public class Events
         m_LastModifiedUser = String.Empty;
         m_Referercer = new List<Reference>();
         m_NUMBER = 0;
+        m_SStartDate = String.Empty;
+        m_SEndDate = String.Empty;
+        m_SCreatedDate = String.Empty;
+        m_SLastModifedDate = String.Empty;
     }
     public int ID
     {
@@ -179,6 +188,44 @@ public class Events
                 Reference = Reference + "[!!]" + item.Name + "[!]" + item.Address + "[!]" + item.Phone;
             }
         }
+    }
+
+    public void SetDateTime()
+    {
+        try
+        {
+            StartDate = Convert.ToDateTime(SStartDate);
+            EndDate = Convert.ToDateTime(SEndDate);
+            CreatedDate = Convert.ToDateTime(SCreatedDate);
+            LastModifedDate = Convert.ToDateTime(SLastModifedDate);
+        }
+        catch (Exception ex)
+        {            
+        }       
+    }
+
+    public string SStartDate
+    {
+        get { return m_StartDate.ToString(); }
+        set { m_SStartDate = value; }
+    }
+
+    public string SEndDate
+    {
+        get { return m_EndDate.ToString (); }
+        set { m_SEndDate = value; }
+    }
+
+    public string SCreatedDate
+    {
+        get { return m_CreatedDate.ToString(); }
+        set { m_SCreatedDate = value; }
+    }
+
+    public string SLastModifedDate
+    {
+        get { return m_LastModifedDate.ToString(); }
+        set { m_SLastModifedDate = value; }
     }
 
 }
