@@ -4,17 +4,17 @@
     </div>
     <div class="form-group">
         <label for="exampleInput1">Tên chương trình</label>
-        <input type="text" ng-model="service.event.m_Title" class="form-control" id="exampleInput1" placeholder="Nhập tên chương trình">
+        <input type="text" ng-model="service.event.Title" class="form-control" id="exampleInput1" placeholder="Nhập tên chương trình">
     </div>
     <div class="form-group">
         <label for="exampleInput2">Địa điểm</label>
-        <input type="text" ng-model="service.event.m_Address" class="form-control" id="exampleInput2" placeholder="Nhập địa điểm">
+        <input type="text" ng-model="service.event.Address" class="form-control" id="exampleInput2" placeholder="Nhập địa điểm">
     </div>
     <div class="row input-date-event">
         <div class="col-md-6">
             <label for="">Ngày bắt đầu</label>
             <p class="input-group input-date">
-                <input type="text" ng-model="service.event.m_StartDate" placeholder="Chọn ngày bắt đầu" class="form-control" datepicker-popup ng-model="startDate" is-open="openedStartDate" min-date="today" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                <input type="text" ng-model="service.event.StartDate" placeholder="Chọn ngày bắt đầu" class="form-control" datepicker-popup ng-model="startDate" is-open="openedStartDate" min-date="today" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
                 <span class="input-group-btn">
                     <button type="button" class="btn btn-default" ng-click="openStartDate($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                 </span>
@@ -24,7 +24,7 @@
         <div class="col-md-6">
             <label for="">Ngày kết thúc</label>
             <p class="input-group input-date">
-                <input type="text" ng-model="service.event.m_EndDate" placeholder="Chọn ngày kết thúc" class="form-control" datepicker-popup ng-model="endDate" is-open="openedEndDate" min-date="today" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                <input type="text" ng-model="service.event.EndDate" placeholder="Chọn ngày kết thúc" class="form-control" datepicker-popup ng-model="endDate" is-open="openedEndDate" min-date="today" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
                 <span class="input-group-btn">
                     <button type="button" class="btn btn-default" ng-click="openEndDate($event)"><i class="glyphicon glyphicon-calendar"></i></button>
                 </span>
@@ -33,11 +33,11 @@
     </div>
     <div class="form-group">
         <label for="exampleInput4">Tổng chi phí dự kiến</label>
-        <input type="number" ng-model="service.event.m_Amount" class="form-control" id="exampleInput4" placeholder="Nhập chi phí dự kiến dạng số (đơn vị VND) ex : 400.000">
+        <input type="number" ng-model="service.event.Amount" class="form-control" id="exampleInput4" placeholder="Nhập chi phí dự kiến dạng số (đơn vị VND) ex : 400.000">
     </div>
     <div class="form-group">
         <label for="exampleInput41">Chi phí tham gia dự kiến</label>
-        <input type="number" ng-model="service.event.m_FeeJoin" class="form-control" id="exampleInput41" placeholder="Nhập chi phí dự kiến dạng số (đơn vị VND) ex : 400.000">
+        <input type="number" ng-model="service.event.FeeJoin" class="form-control" id="exampleInput41" placeholder="Nhập chi phí dự kiến dạng số (đơn vị VND) ex : 400.000">
     </div>
     <div class="margin-top10">
         <label>Upload banner cho chương trình </label>
@@ -57,9 +57,9 @@
             <tbody class="">
                 <tr ng-repeat="ref in service.listRef">
                     <td>{{$index +1}}</td>
-                    <td>{{ref.m_Name}}</td>
-                    <td>{{ref.m_Phone}}</td>
-                    <td>{{ref.m_Address}}</td>
+                    <td>{{ref.Name}}</td>
+                    <td>{{ref.Phone}}</td>
+                    <td>{{ref.Address}}</td>
                 </tr>
             </tbody>
         </table>
@@ -69,14 +69,14 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="exampleInput11">Họ Tên</label>
-                    <input ng-model="newRef.m_Name" type="text" class="form-control" id="exampleInput11" placeholder="Nhập Họ Tên">
+                    <input ng-model="newRef.Name" type="text" class="form-control" id="exampleInput11" placeholder="Nhập Họ Tên">
                 </div>
                 <div class="form-group">
                     <label for="exampleInput22">Địa Chỉ</label>
-                    <input ng-model="newRef.m_Address" type="text" class="form-control" id="exampleInput22" placeholder="Nhập Địa Chỉ">
+                    <input ng-model="newRef.Address" type="text" class="form-control" id="exampleInput22" placeholder="Nhập Địa Chỉ">
                 </div> <div class="form-group">
                     <label for="exampleInput31">Số ĐT </label>
-                    <input ng-model="newRef.m_Phone" type="number" class="form-control" id="exampleInput31" placeholder="Nhập sdt">
+                    <input ng-model="newRef.Phone" type="number" class="form-control" id="exampleInput31" placeholder="Nhập sdt">
                 </div>
                 <div class="margin-top10 text-right">
                     <button type="button" class="btn btn-success" ng-click="addRef()">Ok</button>
@@ -88,7 +88,7 @@
     </div>
     <div>
             <label>Chi tiet chương trình</label>
-        <div ng-if="options != null" summernote config="options" ng-model="service.event.m_Description"></div>
+        <div ng-if="options != null" summernote config="options" ng-model="service.event.Description"></div>
     </div>
     <div class="margin-top10 text-right">
         <button type="button" class="btn btn-success" ng-click="submitAddNew()">Submit</button>
