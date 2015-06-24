@@ -9,13 +9,16 @@ public class Images
     private string m_ImageType;
     private string m_SaveAsFolder; 
     private byte[] m_ImageData;
-   
+    private string  m_URL ;
+    private int m_FileSize;
     public Images()
     {
         m_ImageName = "";
         m_ImageType = "";
         m_ImageData = null;
         m_SaveAsFolder = "";
+        m_URL = "";
+        m_FileSize = 0;
     }
 
     public string ImageName
@@ -40,6 +43,16 @@ public class Images
     {
         get { return m_SaveAsFolder; }
         set { m_SaveAsFolder = value; }
+    }
+    public string  URL
+    {
+        get { return m_URL; }
+        set { m_URL = value; }
+    }
+    public int  FileSize
+    {
+        get { return m_FileSize; }
+        set { m_FileSize = value; }
     }
 
 }

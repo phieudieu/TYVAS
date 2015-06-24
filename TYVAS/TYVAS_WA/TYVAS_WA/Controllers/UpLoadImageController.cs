@@ -6,12 +6,49 @@ using System.Net.Http;
 using System.Web.Http;
 using System.IO;
 using System.Drawing;
+using System.Web;
 
 namespace TYVAS_WA.Controllers
 {
     public class UpLoadImageController : ApiController
     {
         log4net.ILog m_logger = log4net.LogManager.GetLogger(typeof(UpLoadImageController));
+
+         [HttpPost]
+         [Route("~/api/UpLoadFile")]
+        public void UpdateFile(HttpContext context)
+        {
+             try
+             {
+                 if (context.Request.Files.Count > 0)
+                 {
+                     List<Images> lstimg = new List<Images>();
+                     HttpFileCollection files = context.Request.Files;
+                     for (int i = 0; i < files.Count; i++)
+                     {
+                         HttpPostedFile file = files[i];
+                         string[] arr = file.FileName.Split('.');
+                         string filename = arr[0] + "_" + DateTime.Now.ToString("MMddyyHHmmffff") + "." + arr[1];
+                         string fname = AppDomain.CurrentDomain.BaseDirectory + "\\TYAS_IMAGES\\" + filename;
+                         file.SaveAs(fname);
+                         m_logger.Info("fname: " + fname);
+                         Images img = new Images();
+                         img.ImageName = filename;
+                         img.ImageType = "." + arr[1];
+                         img.URL = fname;
+                         img.FileSize = file.ContentLength;
+                         lstimg.Add(img);
+                     }
+                     context.Response.ContentType = "application/json";
+                     MsSqlDataAccess da = new MsSqlDataAccess();
+                     context.Response.Write(da.Object2Json(lstimg, "Images", lstimg.Count));
+                 }    
+             }
+             catch(Exception ex)
+             {
+                 m_logger.Error(ex.ToString());
+             }           
+        }
 
         [HttpPost]
         [Route("~/api/UpLoadImage")]
@@ -22,8 +59,8 @@ namespace TYVAS_WA.Controllers
             {
                 MemoryStream memimage = new MemoryStream(obj.ImageData);
                 Image img = Image.FromStream(memimage);
-                strpath = AppDomain.CurrentDomain.BaseDirectory + "TYAS_IMAGES\\" + obj.SaveAsFolder +"\\" + obj.ImageName+"_"+ DateTime.Now.ToString ("MMddyyHHmmffff") + "." + obj.ImageType;
-                CreateFolder(AppDomain.CurrentDomain.BaseDirectory + "TYAS_IMAGES\\" + obj.SaveAsFolder);
+                strpath = AppDomain.CurrentDomain.BaseDirectory + "\\TYAS_IMAGES\\" + obj.SaveAsFolder +"\\" + obj.ImageName+"_"+ DateTime.Now.ToString ("MMddyyHHmmffff") + "." + obj.ImageType;
+                CreateFolder(AppDomain.CurrentDomain.BaseDirectory + "\\TYAS_IMAGES\\" + obj.SaveAsFolder);
                 img.Save(strpath, System.Drawing.Imaging.ImageFormat.Png);
             }
             catch (Exception ex )
@@ -40,10 +77,7 @@ namespace TYVAS_WA.Controllers
         {
             return GetAllfolder(AppDomain.CurrentDomain.BaseDirectory + "\\TYAS_IMAGES");
         }
-
-       [HttpGet]
-       [Route("~/api/GetAllFileInFolder/{foldername}")]
-
+              
        [HttpDelete]
        [Route("~/api/Image/{SaveAsFolder}/{ImageName}")]
        public string DeleteImage(string SaveAsFolder, string ImageName)
@@ -51,9 +85,9 @@ namespace TYVAS_WA.Controllers
           string result = "File " + ImageName + " deleted.";
           try
           {
-              if (System.IO.File.Exists(AppDomain.CurrentDomain.BaseDirectory + "TYAS_IMAGES\\" + SaveAsFolder + "\\" + ImageName))
+              if (System.IO.File.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\TYAS_IMAGES\\" + SaveAsFolder + "\\" + ImageName))
               {
-                  System.IO.File.Delete(AppDomain.CurrentDomain.BaseDirectory + "TYAS_IMAGES\\" + SaveAsFolder + "\\" + ImageName);
+                  System.IO.File.Delete(AppDomain.CurrentDomain.BaseDirectory + "\\TYAS_IMAGES\\" + SaveAsFolder + "\\" + ImageName);
               }            
           }
            catch(Exception ex)
@@ -63,7 +97,8 @@ namespace TYVAS_WA.Controllers
           }
           return result;
        }
-
+       [HttpGet]
+       [Route("~/api/GetAllFileInFolder/{foldername}")]
        public string  GetAllFileInFolder(string foldername)
        {
            string json = "";
