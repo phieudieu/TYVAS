@@ -3,7 +3,8 @@ define([
     //Dependencies (by requirejs) ex: paths service to inject
     'js/common/controller',
     'js/directives/lnsEventDetail',
-    'js/directives/lnsBlockRight'
+    'js/directives/lnsBlockRight',
+    'js/controllers/eventDetailCtrl'
 ], function(app){
     app.controller('EventDetailPage',['$scope', '$http','$sce',function($scope, $http, $sce) {
 
