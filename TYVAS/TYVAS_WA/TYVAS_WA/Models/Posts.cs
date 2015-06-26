@@ -21,6 +21,8 @@ public class Posts
     private DateTime m_LastModifedDate;
     private string m_LastModifiedUser;
     private int m_TopNbr;
+    private string m_ShortDescription;
+
     public Posts()
     {
         m_PID = 0;
@@ -36,6 +38,7 @@ public class Posts
         m_LastModifedDate = DateTime.MinValue;
         m_LastModifiedUser = String.Empty;
         m_TopNbr = 0;
+        m_ShortDescription = String.Empty;
     }
     public int PID
     {
@@ -59,7 +62,16 @@ public class Posts
     }
     public string ShortContent
     {
-        get { return m_ShortContent; }
+        get {
+            string[] stemp = m_Content.Split(new string[] { "</p>" }, StringSplitOptions.None);
+            if (stemp.Length > 1)
+            {
+                m_ShortContent = stemp[0] + "</p>" + stemp[1] + "</p>";
+            }
+            else
+                m_ShortContent = m_Content;
+            return m_ShortContent;        
+        }
         set { m_ShortContent = value; }
     }
     public DateTime CreatedDate
@@ -101,6 +113,22 @@ public class Posts
     {
         get { return m_TopNbr; }
         set { m_TopNbr = value; }
+    }
+
+    public string ShortDescription
+    {
+        get
+        {
+            string[] stemp = m_Content.Split(new string[] { "</p>" }, StringSplitOptions.None);
+            if (stemp.Length > 1)
+            {
+                m_ShortDescription = stemp[0] + "</p>" + stemp[1] + "</p>";
+            }
+            else
+                m_ShortDescription = m_Content;
+            return m_ShortDescription;
+        }
+        set { m_ShortDescription = value; }
     }
 
 }

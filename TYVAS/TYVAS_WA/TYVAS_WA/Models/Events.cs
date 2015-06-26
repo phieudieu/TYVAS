@@ -31,6 +31,7 @@ public class Events
     private string m_SEndDate;
     private string m_SCreatedDate;
     private string m_SLastModifedDate;
+    private string m_ShortDescription;
 
     public Events()
     {
@@ -56,6 +57,7 @@ public class Events
         m_SEndDate = String.Empty;
         m_SCreatedDate = String.Empty;
         m_SLastModifedDate = String.Empty;
+        m_ShortDescription = String.Empty;
     }
     public int ID
     {
@@ -226,6 +228,21 @@ public class Events
     {
         get { return m_LastModifedDate.ToString(); }
         set { m_SLastModifedDate = value; }
+    }
+      
+    public string  ShortDescription
+    {
+        get {
+            string[] stemp = m_Description.Split(new string[] { "</p>" }, StringSplitOptions.None);
+            if (stemp.Length > 1)
+            {
+                m_ShortDescription = stemp[0] + "</p>" + stemp[1] + "</p>";
+            }
+            else
+                m_ShortDescription = m_Description;
+            return m_ShortDescription; 
+        }
+        set { m_ShortDescription = value; }
     }
 
 }
