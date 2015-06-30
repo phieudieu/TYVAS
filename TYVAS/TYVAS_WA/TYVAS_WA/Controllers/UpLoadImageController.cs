@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.IO;
 using System.Drawing;
 using System.Web;
+using System.Configuration;
 
 namespace TYVAS_WA.Controllers
 {
@@ -24,6 +25,8 @@ namespace TYVAS_WA.Controllers
              {
                  if (context.Request.Files.Count > 0)
                  {
+                     string url = Request.RequestUri.Authority;
+                     string imagefolder = ConfigurationManager.AppSettings["ImageFolder"];
                      List<Images> lstimg = new List<Images>();
                      HttpFileCollection files = context.Request.Files;
                      for (int i = 0; i < files.Count; i++)
@@ -31,19 +34,18 @@ namespace TYVAS_WA.Controllers
                          HttpPostedFile file = files[i];
                          string[] arr = file.FileName.Split('.');
                          string filename = arr[0] + "_" + DateTime.Now.ToString("MMddyyHHmmffff") + "." + arr[1];
-                         string fname = AppDomain.CurrentDomain.BaseDirectory + @"TYAS_IMAGES\" + filename; 
+                         string fname = AppDomain.CurrentDomain.BaseDirectory + "\\" + imagefolder + "\\" + filename; 
                          file.SaveAs(fname);
                          m_logger.Info("fname: " + fname);
                          Images img = new Images();
                          img.ImageName = filename;
                          img.ImageType = "." + arr[1];
-                         img.URL = @"TYAS_IMAGES\" + filename;
+                         img.URL = url + "\\" + imagefolder + "\\" + filename;
                          img.FileSize = file.ContentLength;
                          lstimg.Add(img);
                      }
                      context.Response.ContentType = "application/json";
-                     MsSqlDataAccess da = new MsSqlDataAccess();
-                     //context.Response.Write(da.Object2Json(lstimg, "Images", lstimg.Count));
+                     MsSqlDataAccess da = new MsSqlDataAccess();                
                      result = da.Object2Json(lstimg, "Images", lstimg.Count);
                  }    
              }
