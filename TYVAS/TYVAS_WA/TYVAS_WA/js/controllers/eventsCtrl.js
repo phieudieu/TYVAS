@@ -7,7 +7,7 @@ define([
         $scope.listEvents = [];
         $scope.limit = 20;
         $scope.offset = 0;
-        $scope.url = "/api/Events";
+        $scope.url = "/api/Paging/Events/1/10";
         $scope.totalItems = 0;
         loadEvents();
         function loadEvents() {
