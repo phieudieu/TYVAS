@@ -16,12 +16,11 @@ require.config({
         "angular.summernote": 'lib/angular-summernote/angular-summernote',
         "jquery.iframe.transport": "lib/blueimp/fileupload/jquery.iframe-transport",
         "jquery.fileupload": "lib/blueimp/fileupload/jquery.fileupload",
+        'angular-file-upload':"lib/angular-fileupload/angular-file-upload.min",
         "ui.bootstrap":"lib/bootstrap/js/ui-bootstrap-tpls-0.13.0.min",
         'lnsApp.directive' : 'js/common/directive',
         'lnsApp.service' : 'js/common/service',
         'lnsApp.controllers' : 'js/common/controller',
-        
-
     },
 
     shim: {
@@ -34,7 +33,8 @@ require.config({
         'oc.lazyLoad' : ['angular', 'jquery'],
         bootstrap : ['jquery'],
         ngTouch:["angular"],
-        ngAnimate:["angular"],
+        ngAnimate: ["angular"],
+        'angular-file-upload': ["angular"],
         "ui.bootstrap": ["angular", 'bootstrap', 'ngTouch', 'ngAnimate'],
         summernote: ['jquery', "angular", 'bootstrap'],
         "jquery.ui": ["jquery"],

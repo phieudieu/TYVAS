@@ -41,7 +41,7 @@
     </div>
     <div class="margin-top10">
         <label>Upload banner cho chương trình </label>
-        <input type="file" class="">
+        <div lns-upload lns-attachment="eventBanner"></div>
     </div>
     <div class="margin-top10">
         <label>Người tham khảo (danh sách những người có thể liên hệ để xác nhận chương trình) </label>
@@ -84,6 +84,13 @@
                 </div>
             </div>
             <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="margin-top10">
+        <label>Trạng thái chương trình </label>
+        <div>
+            <p> <a class="blue-color" href="javascrip:void(0);" ng-click="changeStatus(1)"><i class="fa fa-{{service.event.Status==1?'check-':''}}square-o"></i> Đã hoàn thành</a></p>
+            <p><a class="blue-color" href="javascrip:void(0);" ng-click="changeStatus(0)"><i class="fa fa-{{service.event.Status==0?'check-':''}}square-o"></i> Chưa thực hiện</a></p>
         </div>
     </div>
     <div>

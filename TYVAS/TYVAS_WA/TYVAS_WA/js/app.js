@@ -11,6 +11,7 @@ define(['angular',
     'angular.summernote',
     'jquery.iframe.transport',
 	'jquery.fileupload',
+    'angular-file-upload',
     'js/common/directive',
     'js/common/service',
     'js/common/controller',
@@ -20,7 +21,7 @@ define(['angular',
 ], function(angular){
 
     var app = angular.module('lnsApp',
-        ['ngRoute', 'ngTouch', 'oc.lazyLoad', 'ui.bootstrap', 'ngAnimate', 'summernote',
+        ['ngRoute', 'ngTouch', 'oc.lazyLoad', 'ui.bootstrap', 'summernote', 'angularFileUpload', 'ngAnimate',
             'lnsApp.directive','lnsApp.service','lnsApp.controllers'
         ]);
 

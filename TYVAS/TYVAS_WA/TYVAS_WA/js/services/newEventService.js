@@ -22,7 +22,7 @@ define(['js/common/service'],function(mod){
             EndDate: null,
             Images : Null,
             Banner : Null,
-            Status : null,
+            Status : 0,
             Amount : null,
             FeeJoin : null,
             NUMBER : null

@@ -16,8 +16,10 @@ namespace TYVAS_WA.Controllers
 
          [HttpPost]
          [Route("~/api/UpLoadFile")]
-        public void UpdateFile(HttpContext context)
+        public string UpdateFile()
         {
+            string result = null;
+             HttpContext context = HttpContext.Current;
              try
              {
                  if (context.Request.Files.Count > 0)
@@ -29,25 +31,27 @@ namespace TYVAS_WA.Controllers
                          HttpPostedFile file = files[i];
                          string[] arr = file.FileName.Split('.');
                          string filename = arr[0] + "_" + DateTime.Now.ToString("MMddyyHHmmffff") + "." + arr[1];
-                         string fname = AppDomain.CurrentDomain.BaseDirectory + "\\TYAS_IMAGES\\" + filename;
+                         string fname = AppDomain.CurrentDomain.BaseDirectory + @"TYAS_IMAGES\" + filename; 
                          file.SaveAs(fname);
                          m_logger.Info("fname: " + fname);
                          Images img = new Images();
                          img.ImageName = filename;
                          img.ImageType = "." + arr[1];
-                         img.URL = fname;
+                         img.URL = @"TYAS_IMAGES\" + filename;
                          img.FileSize = file.ContentLength;
                          lstimg.Add(img);
                      }
                      context.Response.ContentType = "application/json";
                      MsSqlDataAccess da = new MsSqlDataAccess();
-                     context.Response.Write(da.Object2Json(lstimg, "Images", lstimg.Count));
+                     //context.Response.Write(da.Object2Json(lstimg, "Images", lstimg.Count));
+                     result = da.Object2Json(lstimg, "Images", lstimg.Count);
                  }    
              }
              catch(Exception ex)
              {
                  m_logger.Error(ex.ToString());
-             }           
+             }
+             return result;
         }
 
         [HttpPost]

@@ -23,69 +23,48 @@ define(['angular'
             }
         };
     }
-    lnsAppDirective.directive('zUploadview', ['$http', function ($http) {
+    lnsAppDirective.directive('lnsUpload', ['$http', 'FileUploader', function ($http, FileUploader) {
         return {
             scope: {
-                attachments: '=zUploadview',
+                lnsAttachment: '=lnsAttachment',
             },
-            templateUrl: 'views/partials/common/upload.html',
+            templateUrl: 'views/partials/upload.html',
             replace: true,
-            link: function (scope, element, attrs) {
-                scope.dataUrl = "file/upload";
-                var dropZone = element.closest(".dropzone");
-                var opts = { autoUpload: true, url: scope.dataUrl };
-                var defaultOpts = {
-                    dataType: 'json',
-                    dropZone: dropZone,
-                    add: function (e, data) {
-                        /* if (scope.filter != undefined) {
-                             for (var index in data.files) {
-                                 if (getFileType(data.files[index].name) != scope.filter) {
-                                     return;
-                                 }
-                             }
-                         }*/
-                        if (opts.autoUpload) {
-                            scope.percentage = 0;//to show progress bar
-                            data.submit();
-                            scope.$apply();
-                        }
-                    },
-                    progress: function (e, data) {
-                        var progress = parseInt(data.loaded / data.total * 100, 10);
-                        scope.percentage = progress;
-                        scope.$apply();
-                    },
-                    done: function (e, data) {
-                        var files = data.result && data.result.files;
-                        if (files) {
-                            if (scope.attachments == null || scope.attachments == undefined)
-                                scope.attachments = [];
-                            for (var i = 0; i < files.length; i++) {
-                                if ($.inArray(files[i], scope.attachments) == -1)
-                                    scope.attachments.push(files[i]);
-                                if (scope.onUploadDone != undefined) {
-                                    scope.onUploadDone({ "file": files[i] });
-                                }
-                            }
-                            scope.files = [];
-                        }
-                        scope.percentage = -1;
-                        scope.$apply();
-                    }
-                };
-                var inputFile = element.find("input[type='file']");
-                opts = angular.extend(defaultOpts, opts);
-                inputFile.fileupload(opts);
-                scope.percentage = -1;
-                scope.files = [];
-                scope.getFileType = function (filename) {
-                    return getFileType(filename);
-                };
+            controller: function($scope) {
+                var scope = $scope;
+                scope.dataUrl = "api/UpLoadFile";
+                var optUpload = {
+                    url: scope.dataUrl,
+                    isHTML5: true,
+                    autoUpload: true,
+                    method: 'POST',
+                    onAfterAddingFile: function (item) {
 
-                scope.removeUploadedFile = function (file) {
-                   
+                    },
+                    onCompleteItem: function (item, response, status, headers) {
+                        if (response != null) {
+                            scope.lnsAttachment = JSON.parse(response).Images[0];
+                        }
+                    }
+                }
+                var imageFilter = {
+                    name: 'imageFilter',
+                    fn: function (item, options) {
+                        var type = '|' + item.type.slice(item.type.lastIndexOf('/') + 1) + '|';
+                        return '|jpg|png|jpeg|bmp|gif|JPG'.indexOf(type) !== -1;
+                    }
+                }
+                scope.uploader = new FileUploader(optUpload);
+                scope.uploader.filters.push(imageFilter);
+                scope.uploader.onCompleteAll = function () {
+                    scope.uploader.clearQueue();
                 };
+                scope.removeAtt = function () {
+                    scope.lnsAttachment = {};
+                }
+            },
+            link: function (scope, element, attrs) {
+               
             }
         };
     }]);
