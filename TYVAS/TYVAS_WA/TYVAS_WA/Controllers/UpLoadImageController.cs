@@ -40,7 +40,7 @@ namespace TYVAS_WA.Controllers
                          Images img = new Images();
                          img.ImageName = filename;
                          img.ImageType = "." + arr[1];
-                         img.URL = url + "\\" + imagefolder + "\\" + filename;
+                         img.URL = Request.RequestUri.Scheme + ":\\" + url + "\\" + imagefolder + "\\" + filename;
                          img.FileSize = file.ContentLength;
                          lstimg.Add(img);
                      }
