@@ -51,11 +51,11 @@ define(['angular'
                     name: 'imageFilter',
                     fn: function (item, options) {
                         var type = '|' + item.type.slice(item.type.lastIndexOf('/') + 1) + '|';
-                        return '|jpg|png|jpeg|bmp|gif|JPG'.indexOf(type) !== -1;
+                        return '|jpg|png|jpeg|bmp|gif|JPG|PNG|JPEG|BMP|GIF'.indexOf(type) !== -1;
                     }
                 }
                 scope.uploader = new FileUploader(optUpload);
-                scope.uploader.filters.push(imageFilter);
+                //scope.uploader.filters.push(imageFilter);
                 scope.uploader.onCompleteAll = function () {
                     scope.uploader.clearQueue();
                 };

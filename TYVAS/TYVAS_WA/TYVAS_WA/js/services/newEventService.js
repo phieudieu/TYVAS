@@ -17,7 +17,7 @@ define(['js/common/service'],function(mod){
             Title : Null,
             Description : Null,
             Address : Null,
-            Reference : Null,
+            Referercer: Null,
             StartDate: null,
             EndDate: null,
             Images : Null,
@@ -32,7 +32,7 @@ define(['js/common/service'],function(mod){
     NewEventService.prototype.addNewEvent = function() {
         var self =this;
         var url = "api/Events";
-        self.event.Reference = self.listRef;
+        self.event.Referercer = self.listRef;
         if(self.event.m_ID != null) {
             url="api/Events/fff";
         }
